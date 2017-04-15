@@ -1,0 +1,232 @@
+.about {
+  background: url(../../src/img/about_bckgr.png) center center no-repeat;
+}
+// создать миксин для одинаковых стилей (миксин с передай параметров или миксин с дефолтным значением,которое потом можно изменять!) или использовать @extend, чтобы стили для заголовков не повторялись снова и снова
+.about__title {
+  font-family: "Alegreya Bold";
+  color: $h2DarkGrey;
+  text-align: center;
+
+  &--style {
+    font-family: "Alegreya Bold";
+    color: $h3Brown;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.about__text {
+  font-family: "Lato Regular";
+  color: $h2DarkGrey;
+  text-align: center;
+}
+
+.about__chef {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2px;
+  text-align: center;
+}
+
+.about__chef__title {
+  font-family: "Alegreya Bold";
+  color: $h2DarkGrey;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.about__chef__name {
+  font-family: "Alegreya Regular";
+  color: $h2DarkGrey;
+  border-top: 1px solid $boneAboutBorders;
+  border-bottom: 1px solid $boneAboutBorders;
+  text-align: center;
+}
+
+.about__chef__img {
+
+}
+
+.about__chef__quote {
+
+}
+
+.about__chef__quote__text {
+  font-family: "Scriptina Regular";
+  color: $h3Brown;
+  text-align: center;
+}
+
+.about__chef__quote__mark--opening {
+  display: block;
+  font-family: "Times New Roman";
+  color: $quotesGrey;
+  text-align: left;
+}
+
+.about__chef__quote__mark--closening {
+  display: block;
+  font-family: "Times New Roman";
+  color: $quotesGrey;
+  text-align: right;
+}
+
+.about__media__item--top-left {
+  display: inline-block;
+  margin: 10px 1.59% 7px;
+  width: 46.5%;
+  height: 250px;
+  background: url(../../src/img/about_food_top_left.jpg) -2px -15px no-repeat;
+}
+
+.about__media__item--top-right {
+  @extend .about__media__item--top-left;
+  background: url(../../src/img/about_food_top_right.jpg) -56px -6px no-repeat;
+}
+
+.about__media__item--bottom-left {
+  @extend .about__media__item--top-left;
+  background: url(../../src/img/about_food_bottom_left.jpg) -8px -94px no-repeat;
+}
+
+.about__media__item--bottom-right {
+  @extend .about__media__item--top-left;
+  background: url(../../src/img/about_food_bottom_right.jpg) -26px -25px no-repeat;
+}
+
+// tablet
+@media (min-width:768px) {
+
+}
+
+// desktopL
+@media (min-width: 1260px) {
+// !!!!!!!!! эти стили используются неоднократно для этого расширения - для них нужно задать отдельные классы и вынести их отдельно в main файл или в grid (зависит от OOCSS)
+  .page-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    width: 78.75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  // стили desktopL
+  .about__container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-bottom: 91px;
+    @include clearfix;
+  }
+
+  .about__article,  {
+    width: 50%;
+    float: left;
+  }
+
+  .about__title {
+    font-size: 48px;
+    margin: 91px 0 10px 3px;
+    letter-spacing: 1px;
+    &--style {
+      font-size: 14px;
+      letter-spacing: 1.3px;
+      margin-left: 4px;
+    }
+  }
+
+  .about__text {
+    width: 78.73%;
+    margin: 0 auto;
+    padding: 60px 0 40px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+  }
+
+  .about__chef__title {
+    margin-bottom: 4px;
+    padding-left: 2px;
+    font-size: 23px;
+    letter-spacing: 1px;
+  }
+
+  .about__chef__name {
+    display: inline-block;
+    width: 111px;
+    font-size: 24px;
+    line-height: 54px;
+    letter-spacing: 0.6px;
+    padding-top: 4px;
+    vertical-align: top;
+    margin-top: 60px;
+  }
+
+  .about__chef__img {
+    display: inline-block;
+    margin: 40px 21px 0;
+  }
+
+  .about__chef__quote {
+    width: 410px;
+    margin: 9px auto;
+  }
+
+  .about__chef__quote__text {
+    width: 240px;
+    margin: -4px 84px 0;
+    font-size: 25px;
+    letter-spacing: 0.3px;
+    line-height: 29px;
+  }
+
+  .about__chef__quote__mark--opening {
+    height: 27px;
+    margin-top: 13px;
+    font-size: 57px;
+  }
+
+  .about__chef__quote__mark--closening {
+    height: 27px;
+    font-size: 57px;
+  }
+
+  .about__media {
+    float: right;
+    width: 50%;
+    margin-top: -180px;
+  }
+
+   .about__media__item__overlay {
+    width: 92.54%;
+    height: 228px;
+    border: 5px solid $white;
+    margin: 2%;
+  }
+
+  .about__media__sticker {
+    width: 44.45%;
+    height: 280px;
+    position: relative;
+    top: 427px;
+    left: 28%;
+    background: url(../../src/img/about_sticker.png) center center no-repeat;
+    text-align: center;
+  }
+
+  .about__media__sticker__text {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    padding-top: 88px;
+    font-family: 'Alegreya Regular';
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+    color: $iconsHazel;
+  }
+
+}
