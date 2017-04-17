@@ -1,5 +1,5 @@
 .about {
-  background: url(../../src/img/about_bckgr.png) center center no-repeat;
+  background: url(../img/about_bckgr.png) center center no-repeat;
 }
 // создать миксин для одинаковых стилей (миксин с передай параметров или миксин с дефолтным значением,которое потом можно изменять!) или использовать @extend, чтобы стили для заголовков не повторялись снова и снова
 .about__title {
@@ -76,22 +76,22 @@
   margin: 10px 1.59% 7px;
   width: 46.5%;
   height: 250px;
-  background: url(../../src/img/about_food_top_left.jpg) -2px -15px no-repeat;
+  background: url(../img/about_food_top_left.jpg) -2px -15px no-repeat;
 }
 
 .about__media__item--top-right {
   @extend .about__media__item--top-left;
-  background: url(../../src/img/about_food_top_right.jpg) -56px -6px no-repeat;
+  background: url(../img/about_food_top_right.jpg) -56px -6px no-repeat;
 }
 
 .about__media__item--bottom-left {
   @extend .about__media__item--top-left;
-  background: url(../../src/img/about_food_bottom_left.jpg) -8px -94px no-repeat;
+  background: url(../img/about_food_bottom_left.jpg) -8px -94px no-repeat;
 }
 
 .about__media__item--bottom-right {
   @extend .about__media__item--top-left;
-  background: url(../../src/img/about_food_bottom_right.jpg) -26px -25px no-repeat;
+  background: url(../img/about_food_bottom_right.jpg) -26px -25px no-repeat;
 }
 
 // tablet
@@ -212,7 +212,7 @@
     position: relative;
     top: 427px;
     left: 28%;
-    background: url(../../src/img/about_sticker.png) center center no-repeat;
+    background: url(../img/about_sticker.png) center center no-repeat;
     text-align: center;
   }
 

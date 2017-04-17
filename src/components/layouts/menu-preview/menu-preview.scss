@@ -1,6 +1,6 @@
 .menu-preview {
   // изменить поиционирование
-  background: url(../../src/img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
+  background: url(..//img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
 }
 
 .menu-preview__item {
@@ -8,12 +8,12 @@
 }
 
 .menu-preview__item__img {
-  background: url(../../src/img/menu_slider_item1.jpg) -329px -1px no-repeat;
+  background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
   // Сюда же должны быть переданы параметры для ::before этого элемент (треугольник-загутый уголок) в случае если в мобильной версии загнутый уголок тоже будет
 }
 
 .menu-preview__item__content {
-  background: url(../../src/img/menu_preview_watermark.png) 216px 134px no-repeat;
+  background: url(../img/menu_preview_watermark.png) 216px 134px no-repeat;
 }
 
 .menu-preview__item__title {
@@ -52,13 +52,13 @@
   height: 34px;
   float: left;
   margin-top: 28px;
-  background: url(../../src/img/menu_slider_arrow_left.png) center center no-repeat;
+  background: url(../img/menu_slider_arrow_left.png) center center no-repeat;
 }
 
 .slider__button--right {
   @extend .slider__button--left;
   float: right;
-  background: url(../../src/img/menu_slider_arrow_right.png) center center no-repeat;
+  background: url(../img/menu_slider_arrow_right.png) center center no-repeat;
 }
 
 .slider__container-hider {
@@ -82,22 +82,22 @@
   margin: 0 15px;
   overflow: hidden;
   border-radius: 45px;
-  background: url(../../src/img/menu_slider_item1.jpg) 0px 0px no-repeat;
+  background: url(../img/menu_slider_item1.jpg) 0px 0px no-repeat;
 }
 
 .slider__item--sandwitch {
   @extend .slider__item--pancakes;
-  background: url(../../src/img/menu_slider_item2.jpg) -59px -30px no-repeat;
+  background: url(../img/menu_slider_item2.jpg) -59px -30px no-repeat;
 }
 
 .slider__item--berries {
   @extend .slider__item--pancakes;
-  background: url(../../src/img/menu_slider_item3.jpg) -250px -199px no-repeat;
+  background: url(../img/menu_slider_item3.jpg) -250px -199px no-repeat;
 }
 
 .slider__item--salad {
   @extend .slider__item--pancakes;
-  background: url(../../src/img/menu_slider_item4.jpg) -390px -130px no-repeat;
+  background: url(../img/menu_slider_item4.jpg) -390px -130px no-repeat;
 }
 
 .slider__nav {
@@ -129,7 +129,7 @@
 @media (min-width: 1260px) {
   .menu-preview {
     max-width: 1600px;
-    background: url(../../src/img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
+    background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
 
     .prep-time {
       position: relative;
@@ -204,7 +204,7 @@
     width: 419px;
     height: 512px;
     // свойство с бэкграундом должно быть завязано на кликнутый элемент в слайдере и передаваться в это свойство
-    background: url(../../src/img/menu_slider_item1.jpg) -329px -1px no-repeat;
+    background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%, 0 91%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%, 0 91%);
 
