@@ -52,13 +52,13 @@
   height: 34px;
   float: left;
   margin-top: 28px;
-  background: url(../img/menu_slider_arrow_left.png) center center no-repeat;
+  background: url(../img/sprite.png) center center no-repeat;
 }
 
 .slider__button--right {
   @extend .slider__button--left;
   float: right;
-  background: url(../img/menu_slider_arrow_right.png) center center no-repeat;
+  background: url(../img/sprite.png) center center no-repeat;
 }
 
 .slider__container-hider {
