@@ -1,3 +1,6 @@
+.recipe-btn {
+  @extend %dashed-btn;
+}
 // tablet
 @media (min-width:768px) {
 
@@ -6,8 +9,6 @@
 // desktopL
 @media (min-width: 1260px) {
   .special {
-    max-width: 1260px;
-    margin: 0 auto;
     @include clearfix;
 
     .prep-time {
@@ -27,20 +28,12 @@
   }
 
   .special__title {
-    font-family: 'Alegreya Bold';
-    font-size: 48px;
-    color: $h2DarkGrey;
     text-align: center;
     letter-spacing: 1.2px;
 
     &--font {
       padding-top: 10px;
-      font-family: 'Alegreya Bold';
-      color: $h3Brown;
-      font-size: 14px;
-      text-align: center;
       letter-spacing: 1.4px;
-      text-transform: uppercase;
     }
   }
 
@@ -102,13 +95,8 @@
 
   .ingredients__text {
     padding-top: 19px;
-    font-family: 'Lato Regular';
-    color: $h2DarkGrey;
-    text-align: center;
-    font-size: 14px;
     letter-spacing: 1.4px;
     line-height: 20px;
-    text-align: center;
   }
 
   .special__recipe {
@@ -117,16 +105,14 @@
     width: 70%;
   }
 
-  .special__recipe__link {
+  .recipe-btn {
     display: block;
     width: 169px;
     height: 58px;
     position: relative;
-    border: 1px dashed $iconsHazelLight;
+    border-color: $iconsHazelLight;
     color: $iconsHazelLight;
-    text-align: center;
     background-color: $white;
-    font-family: 'Alegreya Bold';
     font-size: 18px;
     letter-spacing: 1px;
   }

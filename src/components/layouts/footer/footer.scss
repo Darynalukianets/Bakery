@@ -1,9 +1,19 @@
+.ft-logo {
+  @extend %logo;
+  color: $h2DarkGrey;
+}
+
 // tablet
 @media (min-width:768px) {
+
 
 }
 
 // desktopL
 @media (min-width: 1260px) {
 
+  .hd-nav_item {
+    display: inline-block;
+  }
 }
+

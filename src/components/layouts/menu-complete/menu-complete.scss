@@ -13,10 +13,7 @@
   text-align: center;
 
   &--font {
-    font-family: "Alegreya Bold";
     color: $h3SepiaDark;
-    text-transform: uppercase;
-    text-align: center;
   }
 }
 
@@ -31,7 +28,6 @@
 }
 
 .category__item__text {
-  font-family: 'Lato Regular';
   color: $lightGrey;
 }
 
@@ -81,14 +77,6 @@
 }
 
 .category-cover__item__title {
-  font-family: 'Alegreya Bold';
-  color: $h2DarkGrey;
-  text-align: center;
-}
-
-.category-cover__item__text {
-  font-family: 'Lato Regular';
-  color: $h2DarkGrey;
   text-align: center;
 }
 
@@ -124,8 +112,6 @@
   }
 
   .menu-complete__container {
-    max-width: 1260px;
-    margin: 0 auto;
     @include clearfix;
   }
 
@@ -159,8 +145,6 @@
   }
 
   .category__item__text {
-    font-size: 14px;
-    letter-spacing: 1.5px;
     line-height: 35px;
   }
 
@@ -218,13 +202,11 @@
   .category-cover__item__title {
     margin: 51px 13px 25px;
     font-size: 44px;
-    letter-spacing: 1px;
     line-height: 60px;
   }
 
   .category-cover__item__text {
     margin: 0 51px;
-    font-size: 14px;
     letter-spacing: 0.7px;
     line-height: 31px;
   }

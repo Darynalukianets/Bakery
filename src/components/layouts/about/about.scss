@@ -2,40 +2,43 @@
   background: url(../img/about_bckgr.png) center center no-repeat;
 }
 // создать миксин для одинаковых стилей (миксин с передай параметров или миксин с дефолтным значением,которое потом можно изменять!) или использовать @extend, чтобы стили для заголовков не повторялись снова и снова
-.about__title {
-  font-family: "Alegreya Bold";
-  color: $h2DarkGrey;
+.about_title {
   text-align: center;
-
-  &--style {
-    font-family: "Alegreya Bold";
-    color: $h3Brown;
-    text-transform: uppercase;
-    text-align: center;
-  }
 }
 
-.about__text {
+//классы используются в более чем двух секциях
+.section-hd {
+  font-family: "Alegreya Bold";
+  color: $h2DarkGrey;
+}
+
+.section-sub-hd {
+  font-family: "Alegreya Bold";
+  color: $h3Brown;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+//means paragraph with 'Lato Regular' font-family
+.para-lato {
   font-family: "Lato Regular";
   color: $h2DarkGrey;
   text-align: center;
 }
 
-.about__chef {
+.chef-box {
   width: 100%;
   margin: 0 auto;
   padding-left: 2px;
   text-align: center;
 }
 
-.about__chef__title {
-  font-family: "Alegreya Bold";
-  color: $h2DarkGrey;
+.chef_title {
   text-align: center;
   text-transform: capitalize;
 }
 
-.about__chef__name {
+.chef_name {
   font-family: "Alegreya Regular";
   color: $h2DarkGrey;
   border-top: 1px solid $boneAboutBorders;
@@ -43,54 +46,49 @@
   text-align: center;
 }
 
-.about__chef__img {
+.chef_img {
+  background: url(../img/sprite.png) -13px center no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.quote-box {
 
 }
 
-.about__chef__quote {
-
-}
-
-.about__chef__quote__text {
+.quote_text {
   font-family: "Scriptina Regular";
   color: $h3Brown;
   text-align: center;
 }
 
-.about__chef__quote__mark--opening {
+.quote-mark {
   display: block;
   font-family: "Times New Roman";
   color: $quotesGrey;
+}
+
+.quote-open {
   text-align: left;
 }
 
-.about__chef__quote__mark--closening {
-  display: block;
-  font-family: "Times New Roman";
-  color: $quotesGrey;
+.quote-close {
   text-align: right;
 }
 
-.about__media__item--top-left {
-  display: inline-block;
-  margin: 10px 1.59% 7px;
-  width: 46.5%;
-  height: 250px;
+.top-left {
   background: url(../img/about_food_top_left.jpg) -2px -15px no-repeat;
 }
 
-.about__media__item--top-right {
-  @extend .about__media__item--top-left;
+.top-right {
   background: url(../img/about_food_top_right.jpg) -56px -6px no-repeat;
 }
 
-.about__media__item--bottom-left {
-  @extend .about__media__item--top-left;
+.bottom-left {
   background: url(../img/about_food_bottom_left.jpg) -8px -94px no-repeat;
 }
 
-.about__media__item--bottom-right {
-  @extend .about__media__item--top-left;
+.bottom-right {
   background: url(../img/about_food_bottom_right.jpg) -26px -25px no-repeat;
 }
 
@@ -106,54 +104,54 @@
     max-width: 1600px;
     margin: 0 auto;
   }
-
-  .content-wrapper {
-    width: 78.75%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
   // стили desktopL
-  .about__container {
-    max-width: 1260px;
-    margin: 0 auto;
-    padding-bottom: 91px;
+  .about_container {
+    padding-bottom: 76px;
     @include clearfix;
   }
 
-  .about__article,  {
+  .about_content  {
     width: 50%;
     float: left;
   }
 
-  .about__title {
-    font-size: 48px;
+  .about_title {
     margin: 91px 0 10px 3px;
-    letter-spacing: 1px;
-    &--style {
-      font-size: 14px;
-      letter-spacing: 1.3px;
-      margin-left: 4px;
-    }
   }
 
-  .about__text {
+  .about_sub-title {
+    margin-left: 4px;
+  }
+
+  .section-hd {
+    font-size: 48px;
+    letter-spacing: 1px;
+  }
+
+  .section-sub-hd {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+  }
+
+  .about_text {
     width: 78.73%;
     margin: 0 auto;
     padding: 60px 0 40px;
-    font-size: 14px;
     line-height: 24px;
+  }
+
+  .para-lato {
+    font-size: 14px;
     letter-spacing: 1.5px;
   }
 
-  .about__chef__title {
+  .chef_title {
     margin-bottom: 4px;
     padding-left: 2px;
     font-size: 23px;
-    letter-spacing: 1px;
   }
 
-  .about__chef__name {
+  .chef_name {
     display: inline-block;
     width: 111px;
     font-size: 24px;
@@ -164,17 +162,17 @@
     margin-top: 60px;
   }
 
-  .about__chef__img {
+  .chef_img {
     display: inline-block;
     margin: 40px 21px 0;
   }
 
-  .about__chef__quote {
+  .quote-box {
     width: 410px;
     margin: 9px auto;
   }
 
-  .about__chef__quote__text {
+  .quote_text {
     width: 240px;
     margin: -4px 84px 0;
     font-size: 25px;
@@ -182,31 +180,31 @@
     line-height: 29px;
   }
 
-  .about__chef__quote__mark--opening {
+  .quote-mark {
     height: 27px;
+    font-size: 57px;
+  }
+
+  .quote-open {
     margin-top: 13px;
-    font-size: 57px;
   }
 
-  .about__chef__quote__mark--closening {
-    height: 27px;
-    font-size: 57px;
-  }
-
-  .about__media {
+  .about_media {
     float: right;
     width: 50%;
     margin-top: -180px;
   }
 
-   .about__media__item__overlay {
-    width: 92.54%;
-    height: 228px;
-    border: 5px solid $white;
-    margin: 2%;
+  .media_item {
+    display: inline-block;
+    margin: 10px 1.59% 7px;
+    width: 46.5%;
+    height: 250px;
+    outline: 5px solid $white;
+    outline-offset: -11px;
   }
 
-  .about__media__sticker {
+  .sticker {
     width: 44.45%;
     height: 280px;
     position: relative;
@@ -216,7 +214,7 @@
     text-align: center;
   }
 
-  .about__media__sticker__text {
+  .sticker_text {
     display: block;
     width: 160px;
     margin: 0 auto;
@@ -228,5 +226,4 @@
     letter-spacing: 1.4px;
     color: $iconsHazel;
   }
-
 }
