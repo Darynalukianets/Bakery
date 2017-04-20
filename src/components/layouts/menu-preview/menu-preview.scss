@@ -3,16 +3,16 @@
   background: url(..//img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
 }
 
-.menu-preview__item {
+.menu-preview_widget {
   background-color: $white;
 }
 
-.menu-preview__item__img {
+.widget_cover {
   background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
   // Сюда же должны быть переданы параметры для ::before этого элемент (треугольник-загутый уголок) в случае если в мобильной версии загнутый уголок тоже будет
 }
 
-.menu-preview__item__content {
+.widget_content {
   background: url(../img/menu_preview_watermark.png) 216px 134px no-repeat;
 }
 
@@ -20,36 +20,48 @@
   display: block;
 }
 
-.raiting__item {
+.raiting_item {
   display: inline-block;
+  width: 15px;
+  height: 15px;
 }
 
-.menu-preview__item__slider {
+.checked-star {
+  background: url(../img/sprite.png) -125px -69px no-repeat;
+}
+
+.unchecked-star {
+  background: url(../img/sprite.png) -139px -69px no-repeat;
+}
+
+.widget_slider {
   display: block;
   @include clearfix;
 }
 
-.slider__button--left {
+.slider_btn {
   display: block;
   width: 34px;
   height: 34px;
-  float: left;
   margin-top: 28px;
-  background: url(../img/sprite.png) center center no-repeat;
 }
 
-.slider__button--right {
-  @extend .slider__button--left;
+.left-btn {
+  float: left;
+  background: url(../img/sprite.png) -127px -36px no-repeat;
+}
+
+.right-btn {
   float: right;
-  background: url(../img/sprite.png) center center no-repeat;
+  background: url(../img/sprite.png) -127px -2px no-repeat;
 }
 
-.slider__container-hider {
+.slider_hider {
   display: inline-block;
   overflow: hidden;
 }
 
-.slider__list {
+.slider_list {
   width: 1000px;
   position: relative;
   @include clearfix;
@@ -57,7 +69,7 @@
   left: -122px;
 }
 
-.slider__item--pancakes {
+.slider_item {
   display: block;
   float: left;
   width: 90px;
@@ -65,30 +77,30 @@
   margin: 0 15px;
   overflow: hidden;
   border-radius: 45px;
+}
+
+.pancakes {
   background: url(../img/menu_slider_item1.jpg) 0px 0px no-repeat;
 }
 
-.slider__item--sandwitch {
-  @extend .slider__item--pancakes;
+.sandwitch {
   background: url(../img/menu_slider_item2.jpg) -59px -30px no-repeat;
 }
 
-.slider__item--berries {
-  @extend .slider__item--pancakes;
+.berries {
   background: url(../img/menu_slider_item3.jpg) -250px -199px no-repeat;
 }
 
-.slider__item--salad {
-  @extend .slider__item--pancakes;
+.salad {
   background: url(../img/menu_slider_item4.jpg) -390px -130px no-repeat;
 }
 
-.slider__nav {
+.slider_nav {
   display: block;
   @include clearfix;
 }
 
-.slider__nav__item--active {
+.slider_nav_item {
   display: block;
   float: left;
   width: 9px;
@@ -98,8 +110,7 @@
   border-radius: 5px;
 }
 
-.slider__nav__item--inactive {
-  @extend .slider__nav__item--active;
+.inactive {
   background-color: $navElemsSepia;
 }
 
@@ -114,7 +125,7 @@
     max-width: 1600px;
     background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
 
-    .prep-time {
+    .cook-time {
       position: relative;
       top: 97px;
       right: 95px;
@@ -122,53 +133,17 @@
       float: right;
     }
 
-    .prep-time__ready-in {
+    .ready-in {
       box-shadow: 0px 20px 80px 0px rgba(105,80,58,0.54);
     }
   }
 
-  .menu-preview__container {
+  .menu-preview_container {
     height: 760px;
     @include clearfix;
   }
 
-  // .prep-time {
-  //   position: relative;
-  //   top: 97px;
-  //   right: 95px;
-  //   width: 200px;
-  //   z-index: 1;
-  //   float: right;
-  // }
-  //
-  // .prep-time__ready-in {
-  //   padding: 33px 0 30px;
-  //   background: url(../../src/img/ready_in_bckgr.png) center center no-repeat;
-  //   text-align: center;
-  //   box-shadow: 0px 20px 80px 0px rgba(105,80,58,0.54);
-  // }
-  //
-  // .prep-time__ready-in__title {
-  //   font-size: 18px;
-  //   letter-spacing: 1.9px;
-  //   line-height: 15px;
-  // }
-  //
-  // .prep-time__ready-in__amount {
-  //   display: block;
-  //   font-size: 92px;
-  //   letter-spacing: 10px;
-  //   padding: 13px 0 0 13px;
-  // }
-  //
-  // .prep-time__ready-in__units {
-  //   display: block;
-  //   font-size: 17px;
-  //   letter-spacing: 2.5px;
-  //   padding-left: 4px;
-  // }
-
-  .menu-preview__item {
+  .menu-preview_widget {
     display: block;
     position: relative;
     height: 512px;
@@ -180,7 +155,7 @@
     border-bottom-left-radius: 80px;
   }
 
-  .menu-preview__item__img {
+  .widget_cover {
     display: inline-block;
     width: 419px;
     height: 512px;
@@ -203,7 +178,7 @@
     }
   }
 
-  .menu-preview__item__content {
+  .widget_content {
     width: 548px;
     height: 512px;
     display: inline-block;
@@ -213,22 +188,22 @@
   }
 
   // Стили заголовков и контента здесь перекликаются, создать функцию-миксин с дефолтными значениями для этих элементов
-  .menu-preview__item__title {
+  .widget-hd {
     position: relative;
     top: 148px;
     left: 64px;
     text-align: left;
-
-    &--font {
-      position: relative;
-      top: 148px;
-      left: 64px;
-      text-align: left;
-      padding: 10px 0 62px;
-    }
   }
 
-  .menu-preview__item__text {
+  .widget-sub-hd {
+    position: relative;
+    top: 148px;
+    left: 64px;
+    text-align: left;
+    padding: 10px 0 62px;
+  }
+
+  .widget_text {
     position: relative;
     top: 146px;
     left: 64px;
@@ -243,33 +218,18 @@
     left: 63px;
   }
 
-  .menu-preview__item__slider {
+  .widget_slider {
     width: 429px;
     position: relative;
     top: 231px;
     left: 62px;
   }
 
-  // .slider__button--left {
-  //   display: block;
-  //   width: 34px;
-  //   height: 34px;
-  //   float: left;
-  //   margin-top: 28px;
-  //   background: url(../../src/img/menu_slider_arrow_left.png) center center no-repeat;
-  // }
-  //
-  // .slider__button--right {
-  //   @extend .slider__button--left;
-  //   float: right;
-  //   background: url(../../src/img/menu_slider_arrow_right.png) center center no-repeat;
-  // }
-
-  .slider__container-hider {
+  .slider_hider {
     width: 343px;
   }
 
-  .slider__nav {
+  .slider_nav {
     margin: 15px auto 0;
     width: 84px;
   }

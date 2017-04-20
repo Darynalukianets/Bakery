@@ -1,0 +1,50 @@
+.cook-time {
+  display: block;
+  width: 200px;
+}
+
+.cook-time-hd {
+  font-family: 'Alegreya Bold';
+  text-transform: uppercase;
+  color: $h3Brown;
+  font-size: 18px;
+  letter-spacing: 1.9px;
+  line-height: 15px;
+}
+
+.cook-time-amount {
+  font-family: 'Alegreya Bold';
+  color: $h2DarkGrey;
+  display: block;
+  font-size: 60px;
+  letter-spacing: 10px;
+  padding: 13px 0 0 13px;
+}
+
+.cook-time-units {
+  font-family: 'Alegreya Bold';
+  color: $eggShell;
+  display: block;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  padding-left: 4px;
+}
+
+.prep, .cook {
+  @extend %cook-time-item;
+}
+
+.ready-in {
+  padding: 33px 0 30px;
+  background: url(..//img/ready_in_bckgr.png) center center no-repeat;
+  text-align: center;
+}
+
+.ready-in_amount {
+  font-family: 'Alegreya Bold';
+  color: $iconsHazelLight;
+  display: block;
+  font-size: 92px;
+  letter-spacing: 10px;
+  padding: 13px 0 0 13px;
+}
