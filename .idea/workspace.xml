@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7806afd-1e99-48e2-921a-b2f01c64adc2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/about/about.scss" afterPath="$PROJECT_DIR$/src/components/layouts/about/about.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.scss" afterPath="$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/special/special.html" afterPath="$PROJECT_DIR$/src/components/layouts/special/special.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,11 +43,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="special.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="special.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/layouts/special/special.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="34">
                   <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -73,7 +81,7 @@
             <entry file="file://$PROJECT_DIR$/src/assets/styles/base/common.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="476">
-                  <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+                  <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -83,7 +91,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/layouts/about/about.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="245">
-                  <caret line="83" column="25" lean-forward="true" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+                  <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -93,7 +101,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="184">
-                  <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+                  <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -123,7 +131,7 @@
             <entry file="file://$PROJECT_DIR$/src/assets/styles/helpers/placeholders.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="510">
-                  <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+                  <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -164,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/components/layouts/about/about.scss" />
         <option value="$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.scss" />
         <option value="$PROJECT_DIR$/src/components/layouts/special/special.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -232,8 +241,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-164" />
-    <option name="y" value="93" />
+    <option name="x" value="-8" />
+    <option name="y" value="106" />
     <option name="width" value="1892" />
     <option name="height" value="803" />
   </component>
@@ -698,12 +707,12 @@
       <option name="presentableId" value="Default" />
       <updated>1492459403376</updated>
       <workItem from="1492459405347" duration="2722000" />
-      <workItem from="1492501828576" duration="59058000" />
+      <workItem from="1492501828576" duration="59817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61780000" />
+    <option name="totallyTimeSpent" value="62539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,7 +724,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-164" y="93" width="1892" height="803" extended-state="0" />
+    <frame x="-8" y="106" width="1892" height="803" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15245202" sideWeight="0.23825504" order="3" side_tool="true" content_ui="tabs" />
@@ -893,7 +902,7 @@
     <entry file="file://$PROJECT_DIR$/src/assets/styles/base/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -917,7 +926,7 @@
     <entry file="file://$PROJECT_DIR$/src/assets/styles/helpers/placeholders.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -925,7 +934,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/layouts/about/about.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="83" column="25" lean-forward="true" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+          <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -941,7 +950,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -950,6 +959,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
