@@ -48,12 +48,12 @@
 
 .left-btn {
   float: left;
-  background: url(../img/sprite.png) -127px -36px no-repeat;
+  background: url(../img/sprite.png) -128px -36px no-repeat;
 }
 
 .right-btn {
   float: right;
-  background: url(../img/sprite.png) -127px -2px no-repeat;
+  background: url(../img/sprite.png) -129px -2px no-repeat;
 }
 
 .slider_hider {
@@ -152,7 +152,7 @@
     left: 95px;
     @include clearfix;
     box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
-    border-bottom-left-radius: 80px;
+    border-bottom-left-radius: 90px;
   }
 
   .widget_cover {
@@ -162,15 +162,15 @@
     // свойство с бэкграундом должно быть завязано на кликнутый элемент в слайдере и передаваться в это свойство
     background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%, 0 91%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%, 0 91%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 90%);
 
     &::before {
   	content:"";
   	position: absolute;
-  	top: 466px;
+  	top: 461px;
   	left: 0px;
   	border-style: solid;
-  	border-width: 50px 0 0 48px;
+  	border-width: 50px 0 0 50px;
   	border-top-color: $white;
     border-right-color: $white;
     border-bottom-color: $white;
@@ -179,7 +179,7 @@
   }
 
   .widget_content {
-    width: 548px;
+    width: 542px;
     height: 512px;
     display: inline-block;
     position: relative;

@@ -81,7 +81,8 @@
 @media (min-width: 1260px) {
 
   .about_container {
-    padding-bottom: 76px;
+    margin-bottom: -10px;
+    padding-bottom: 101px;
     @include clearfix;
   }
 
