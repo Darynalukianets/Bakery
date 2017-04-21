@@ -19,61 +19,55 @@
     }
   }
 
-  .special__header {
+  .special_hd {
     display: block;
     margin: 0 auto;
     padding-top: 96px;
     width: 480px;
     background: url(../img/special_header_bckgr.png) center center no-repeat;
-  }
 
-  .special__title {
-    text-align: center;
-    letter-spacing: 1.2px;
-
-    &--font {
+    h1 {
+      text-align: center;
+      letter-spacing: 1.2px;
+    }
+    h2 {
       padding-top: 10px;
       letter-spacing: 1.4px;
     }
   }
 
-  .special__ingredients {
+  .ingredients-box {
     display: block;
     float: left;
     margin-top: -6px;
     width: 23.4%;
   }
 
-  .special__ingredients__list {
+  .ingredients {
     width: 295px;
   }
 
-  .special__ingredients__item1 {
+  .ingredient {
     display: block;
     margin-bottom: 55px;
 
-    .ingredients__img {
-      background: url(../img/ingredient_img1.jpg) -108px -23px no-repeat;
+    h4 {
+      margin-left: -4px;
+      padding-top: 23px;
+      font-family: 'Alegreya Bold';
+      color: $h3Brown;
+      font-size: 29px;
+      text-align: center;
+      letter-spacing: 1.2px;
+    }
+    p {
+      padding-top: 19px;
+      letter-spacing: 1.4px;
+      line-height: 20px;
     }
   }
 
-  .special__ingredients__item2 {
-    @extend .special__ingredients__item1;
-
-    .ingredients__img {
-      background: url(../img/ingredient_img2.jpg) -23px -8px no-repeat;
-    }
-  }
-
-  .special__ingredients__item3 {
-    @extend .special__ingredients__item1;
-
-    .ingredients__img {
-      background: url(../img/ingredient_img3.jpg) -31px -3px no-repeat;
-    }
-  }
-
-  .ingredients__img {
+  .ingredient_img {
     display: block;
     width: 100px;
     height: 100px;
@@ -83,23 +77,19 @@
     box-shadow: 2px 10px 29px -5px rgba(0,0,0,0.5);
   }
 
-  .ingredients__title {
-    margin-left: -4px;
-    padding-top: 23px;
-    font-family: 'Alegreya Bold';
-    color: $h3Brown;
-    font-size: 29px;
-    text-align: center;
-    letter-spacing: 1.2px;
+  .wheat {
+    background: url(../img/ingredient_img1.jpg) -108px -23px no-repeat;
   }
 
-  .ingredients__text {
-    padding-top: 19px;
-    letter-spacing: 1.4px;
-    line-height: 20px;
+  .egg {
+    background: url(../img/ingredient_img2.jpg) -23px -8px no-repeat;
   }
 
-  .special__recipe {
+  .ricotta {
+    background: url(../img/ingredient_img3.jpg) -31px -3px no-repeat;
+  }
+
+  .recipe-preview {
     display: block;
     float: right;
     width: 70%;
@@ -117,7 +107,7 @@
     letter-spacing: 1px;
   }
 
-  .special__recipe__img {
+  .recipe_img {
     position: relative;
     float: left;
     width: 820px;

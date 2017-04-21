@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7806afd-1e99-48e2-921a-b2f01c64adc2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/base/common.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/base/_module.scss" afterPath="$PROJECT_DIR$/src/assets/styles/base/_module.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/about/about.html" afterPath="$PROJECT_DIR$/src/components/layouts/about/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/about/about.scss" afterPath="$PROJECT_DIR$/src/components/layouts/about/about.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/menu-complete/menu-complete.html" afterPath="$PROJECT_DIR$/src/components/layouts/menu-complete/menu-complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/menu-complete/menu-complete.scss" afterPath="$PROJECT_DIR$/src/components/layouts/menu-complete/menu-complete.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/special/special.html" afterPath="$PROJECT_DIR$/src/components/layouts/special/special.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layouts/special/special.scss" afterPath="$PROJECT_DIR$/src/components/layouts/special/special.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +23,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5110159">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="menu-preview.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="menu-preview.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
@@ -48,11 +43,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="special.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="special.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/layouts/special/special.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="765">
-                  <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+                <state relative-caret-position="612">
+                  <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -72,7 +67,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="menu-preview.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="menu-preview.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
@@ -92,11 +87,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="special.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="special.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/layouts/special/special.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+                <state relative-caret-position="493">
+                  <caret line="119" column="1" lean-forward="false" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -143,8 +138,6 @@
         <option value="$PROJECT_DIR$/src/components/layouts/header/header.html" />
         <option value="$PROJECT_DIR$/src/components/layouts/header/header.scss" />
         <option value="$PROJECT_DIR$/src/components/layouts/footer/footer.html" />
-        <option value="$PROJECT_DIR$/src/components/layouts/special/special.scss" />
-        <option value="$PROJECT_DIR$/src/components/layouts/special/special.html" />
         <option value="$PROJECT_DIR$/src/components/partials/prep-time.scss" />
         <option value="$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/base/_module.scss" />
@@ -155,6 +148,8 @@
         <option value="$PROJECT_DIR$/src/components/layouts/menu-complete/menu-complete.html" />
         <option value="$PROJECT_DIR$/src/components/layouts/menu-complete/menu-complete.scss" />
         <option value="$PROJECT_DIR$/src/components/layouts/menu-preview/menu-preview.html" />
+        <option value="$PROJECT_DIR$/src/components/layouts/special/special.html" />
+        <option value="$PROJECT_DIR$/src/components/layouts/special/special.scss" />
       </list>
     </option>
   </component>
@@ -689,12 +684,12 @@
       <option name="presentableId" value="Default" />
       <updated>1492459403376</updated>
       <workItem from="1492459405347" duration="2722000" />
-      <workItem from="1492501828576" duration="53661000" />
+      <workItem from="1492501828576" duration="55466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56383000" />
+    <option name="totallyTimeSpent" value="58188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -881,14 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layouts/special/special.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layouts/menu-complete/menu-complete.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2890">
@@ -913,14 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layouts/special/special.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layouts/menu-complete/menu-complete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -933,6 +912,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layouts/special/special.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="119" column="1" lean-forward="false" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layouts/special/special.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
           <folding />
         </state>
       </provider>
