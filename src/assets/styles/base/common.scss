@@ -1,4 +1,35 @@
+@import "colors.scss";
+
+.section-hd {
+  font-family: "Alegreya Bold";
+  color: $h2DarkGrey;
+}
+
+.section-sub-hd {
+  font-family: "Alegreya Bold";
+  color: $h3Brown;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+//means paragraph with 'Lato Regular' font-family
+.para-lato {
+  font-family: "Lato Regular";
+  color: $h2DarkGrey;
+  text-align: center;
+}
+
 @media (min-width: 1260px) {
+  .page-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
   .col-50-left {
     width: 50%;
     display: block;
@@ -9,5 +40,20 @@
     width: 50%;
     display: block;
     float: right;
+  }
+
+  .section-hd {
+    font-size: 48px;
+    letter-spacing: 1px;
+  }
+
+  .section-sub-hd {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+  }
+
+  .para-lato {
+    font-size: 14px;
+    letter-spacing: 1.5px;
   }
 }
