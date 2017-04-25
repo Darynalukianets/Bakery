@@ -88,6 +88,7 @@ header {
   }
 }
 
+//разобраться в необходимости эрасположения стилей этого элемента (и элемента выше, вставленного с помощью :after) именно в mobile-first. Возможно, в мобильной версии этого элемента не будет вообще
 .header_border-decor {
   position: absolute;
   width: 8.74%;
@@ -195,6 +196,12 @@ header {
     font-size: 14px;
     line-height: 43px;
     letter-spacing: 4px;
+  }
+
+  .header_border-decor {
+    width: 10.31%;
+    top: 849px;
+    left: 44.73%;
   }
 }
 

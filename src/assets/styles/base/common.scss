@@ -19,6 +19,37 @@
   text-align: center;
 }
 
+//laptop******************************************************************
+@media (min-width: 1024px) {
+  .col-50-left {
+    width: 50%;
+    display: block;
+    float: left;
+  }
+
+  .col-50-right {
+    width: 50%;
+    display: block;
+    float: right;
+  }
+
+  .section-hd {
+    font-size: 48px;
+    letter-spacing: 1px;
+  }
+
+  .section-sub-hd {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+  }
+
+  .para-lato {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+}
+
+//desktopL******************************************************************
 @media (min-width: 1260px) {
   .page-container {
     max-width: 1600px;
