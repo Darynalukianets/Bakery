@@ -1,15 +1,65 @@
+.special {
+  @include clearfix;
+}
+
+.special_hd {
+  display: block;
+  margin: 0 auto;
+  background: url(../img/special_header_bckgr.png) center center no-repeat;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.ingredient {
+
+  h4 {
+    font-family: 'Alegreya Bold';
+    color: $h3Brown;
+    text-align: center;
+  }
+}
+
+.ingredient_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 0 14px 13px -2px $lightShadow;
+}
+
+.wheat {
+  background: url(../img/ingredient_img1.jpg) -108px -23px no-repeat;
+}
+
+.egg {
+  background: url(../img/ingredient_img2.jpg) -23px -8px no-repeat;
+}
+
+.ricotta {
+  background: url(../img/ingredient_img3.jpg) -31px -3px no-repeat;
+}
+
 .recipe-btn {
   @extend %dashed-btn;
+  border-color: $iconsHazelLight;
+  color: $iconsHazelLight;
+  background-color: $white;
 }
-// tablet
+
+.recipe_img {
+  background: url(../img/special_img.jpg) -14px -29px no-repeat;
+}
+
+
+// tablet*******************************************************************************************
 @media (min-width:768px) {
 
 }
 
-// desktopL
-@media (min-width: 1260px) {
+//laptop*******************************************************************************************
+@media (min-width:1024px) {
   .special {
-    @include clearfix;
 
     .cook-time {
       position: relative;
@@ -21,14 +71,99 @@
   }
 
   .special_hd {
-    display: block;
-    margin: 0 auto;
     padding-top: 96px;
     width: 480px;
-    background: url(../img/special_header_bckgr.png) center center no-repeat;
 
     h1 {
-      text-align: center;
+      letter-spacing: 1.2px;
+    }
+    h2 {
+      padding-top: 10px;
+      letter-spacing: 1.4px;
+    }
+  }
+
+  .ingredients-box {
+    display: block;
+    float: left;
+    margin-top: -6px;
+    width: 25.4%;
+  }
+
+  .ingredients {
+    width: 100%;
+  }
+
+  .ingredient {
+    display: block;
+    margin-bottom: 55px;
+
+    h4 {
+      margin-left: -4px;
+      padding-top: 23px;
+      font-size: 29px;
+      letter-spacing: 1.2px;
+    }
+    p {
+      padding-top: 19px;
+      letter-spacing: 1.4px;
+      line-height: 20px;
+    }
+  }
+
+  .ingredient_img {
+    display: block;
+    margin-left: 80px;
+  }
+
+  .recipe-preview {
+    display: block;
+    float: right;
+    width: 70%;
+    height: 680px;
+  }
+
+  .recipe-btn {
+    display: block;
+    width: 171px;
+    height: 59px;
+    position: relative;
+    top: 45px;
+    left: -48px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .recipe_img {
+    position: relative;
+    float: left;
+    width: 726px;
+    height: 536px;
+    top: 87px;
+    left: -30px;
+    border: 10px solid $white;
+    box-shadow: -1px 11px 13px 0 $lightShadow;
+  }
+}
+
+// desktopL*****************************************************************************************
+@media (min-width: 1260px) {
+  .special {
+
+    .cook-time {
+      position: relative;
+      float: right;
+      top: -552px;
+      left: -10px;
+      box-shadow: 0 11px 8px 0 $lightShadow;
+    }
+  }
+
+  .special_hd {
+    padding-top: 96px;
+    width: 480px;
+
+    h1 {
       letter-spacing: 1.2px;
     }
     h2 {
@@ -55,10 +190,7 @@
     h4 {
       margin-left: -4px;
       padding-top: 23px;
-      font-family: 'Alegreya Bold';
-      color: $h3Brown;
       font-size: 29px;
-      text-align: center;
       letter-spacing: 1.2px;
     }
     p {
@@ -70,24 +202,7 @@
 
   .ingredient_img {
     display: block;
-    width: 100px;
-    height: 100px;
     margin-left: 95px;
-    border-radius: 50px;
-    // временное значение
-    box-shadow: 0 14px 13px -2px $lightShadow;
-  }
-
-  .wheat {
-    background: url(../img/ingredient_img1.jpg) -108px -23px no-repeat;
-  }
-
-  .egg {
-    background: url(../img/ingredient_img2.jpg) -23px -8px no-repeat;
-  }
-
-  .ricotta {
-    background: url(../img/ingredient_img3.jpg) -31px -3px no-repeat;
   }
 
   .recipe-preview {
@@ -104,9 +219,6 @@
     position: relative;
     top: 45px;
     left: 20px;
-    border-color: $iconsHazelLight;
-    color: $iconsHazelLight;
-    background-color: $white;
     font-size: 18px;
     letter-spacing: 1px;
   }
@@ -119,7 +231,6 @@
     top: 87px;
     left: 42px;
     border: 10px solid $white;
-    background: url(../img/special_img.jpg) -14px -29px no-repeat;
     box-shadow: -1px 11px 13px 0 $lightShadow;
   }
 }
