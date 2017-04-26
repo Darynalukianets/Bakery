@@ -1,5 +1,10 @@
 .ft-nav {
   @extend %nav;
+  text-align: center;
+  border-top: 1px solid $lightGrey;
+  border-bottom: 1px solid $lightGrey;
+  background-color: $ftNavBckgr;
+  box-shadow: inset 0px 0px 17px 11px $bodyBckgrColor;
 }
 
 .ft-nav_separator {
@@ -11,13 +16,45 @@
   color: $h2DarkGrey;
 }
 
-// tablet
+// tablet******************************************************************************************
 @media (min-width:768px) {
 
 
 }
 
-// desktopL
+// laptop******************************************************************************************
+@media (min-width:1024px) {
+
+  .footer {
+    padding-bottom: 70px;
+  }
+
+  .ft-nav {
+    width: 38.6%;
+    display: inline-block;
+    margin-top: 59px;
+  }
+
+  .ft-nav_item {
+    display: inline-block;
+
+    a {
+      line-height: 69px;
+    }
+  }
+
+  .ft-nav_separator {
+    padding: 0 3%;
+  }
+
+  .ft-logo {
+    display: inline-block;
+    padding: 0 34px 21px 43px;
+    vertical-align: bottom;
+  }
+}
+
+// desktopL*****************************************************************************************
 @media (min-width: 1260px) {
 
   .footer {
@@ -28,12 +65,6 @@
     width: 40.8%;
     display: inline-block;
     margin-top: 59px;
-    text-align: center;
-    border-top: 1px solid $lightGrey;
-    border-bottom: 1px solid $lightGrey;
-    //text-shadow: 0px 0px 30px $iconShadowBrown;
-    background-color: $ftNavBckgr;
-    box-shadow: inset 0px 0px 17px 11px $bodyBckgrColor;
   }
 
   .ft-nav_item {
