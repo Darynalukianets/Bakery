@@ -115,12 +115,12 @@
 }
 
 // tablet****************************************************************
-@media (min-width:768px) {
+@media (max-width: 1023px) {
 
 }
 
 // laptop****************************************************************
-@media (min-width:1024px) {
+@media (min-width:1024px) and (max-width: 1259px) {
   .menu-preview {
     max-width: 1259px;
     background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;

@@ -1,5 +1,9 @@
 @import "colors.scss";
 
+.page-container {
+  overflow: hidden;
+}
+
 .section-hd {
   font-family: "Alegreya Bold";
   color: $h2DarkGrey;
@@ -19,8 +23,54 @@
   text-align: center;
 }
 
+//tablet******************************************************************
+@media (max-width: 1023px) {
+
+  //.page-container {
+  //  max-width: 1600px;
+  //  margin: 0 auto;
+  //}
+
+  .content-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .col-50-left {
+    width: 50%;
+    display: block;
+    float: left;
+  }
+
+  .col-50-right {
+    width: 50%;
+    display: block;
+    float: right;
+  }
+
+  .section-hd {
+    font-size: 48px;
+    letter-spacing: 1px;
+  }
+
+  .section-sub-hd {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+  }
+
+  .para-lato {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+}
+
 //laptop******************************************************************
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1259px) {
+  //.page-container {
+  //  max-width: 1259px;
+  //  margin: 0 auto;
+  //}
+
   .content-wrapper {
     max-width: 1024px;
     margin: 0 auto;
