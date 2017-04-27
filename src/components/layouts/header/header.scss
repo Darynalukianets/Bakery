@@ -101,7 +101,7 @@ header {
 // tablet ***************************************************************************************
 @media (max-width: 1023px) {
   .head {
-    height: 61px;
+    height: 72px;
     padding-top: 9px;
   }
 
@@ -113,13 +113,14 @@ header {
 
   .hd-nav {
     float: right;
-    width: 69%;
+    width: 75%;
     vertical-align: top;
   }
 
   .hd-nav_list {
     width: 100%;
-    margin-top: 19px;
+    margin: 0 auto;
+    margin-top: 23px;
   }
 
   .hd-nav_item {
@@ -127,19 +128,21 @@ header {
   }
 
   .hd-nav_separator {
-    padding: 0 2.3%;
+    padding: 0 1%;
   }
 
   .share-box {
     float: right;
-    width: 9%;
+    width: 3%;
     margin-right: 1%;
+    margin-top: -3px;
     text-align: right;
   }
 
   .share_item {
     display: inline-block;
     margin-left: 18%;
+    margin-top: 3px;
   }
 
   .share_item.twitter {
@@ -186,17 +189,21 @@ header {
   .menu_btn {
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 215px;
+    margin-bottom: 135px;
     padding-left: 10px;
     font-size: 14px;
     line-height: 43px;
     letter-spacing: 4px;
+
+    &::after {
+      margin: 102px 0 0 48px;
+    }
   }
 
   .header_border-decor {
-    width: 10.31%;
-    top: 849px;
-    left: 44.73%;
+    width: 13.9%;
+    top: 872px;
+    left: 43%;
   }
 }
 
