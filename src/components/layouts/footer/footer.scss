@@ -18,8 +18,36 @@
 
 // tablet******************************************************************************************
 @media (max-width: 1023px) {
+  .footer {
+    padding-bottom: 70px;
+  }
 
+  .ft-nav {
+    width: 39.8%;
+    display: inline-block;
+    margin-top: 59px;
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
 
+  .ft-nav_item {
+    display: inline-block;
+
+    a {
+      line-height: 69px;
+    }
+  }
+
+  .ft-nav_separator {
+    padding: 0;
+  }
+
+  .ft-logo {
+    display: inline-block;
+    padding: 0 0 16px 4px;
+    vertical-align: bottom;
+    font-size: 28px;
+  }
 }
 
 // laptop******************************************************************************************
