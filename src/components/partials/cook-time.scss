@@ -48,3 +48,28 @@
   letter-spacing: 10px;
   padding: 13px 0 0 13px;
 }
+
+// tablet****************************************************************
+@media (max-width: 1023px) {
+  .cook-time {
+    width: 150px;
+  }
+
+  .cook-time-hd {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+
+  .cook-time-units {
+    font-size: 15px;
+  }
+
+  .ready-in {
+    padding: 15px 0 14px;
+  }
+
+  .ready-in_amount {
+    font-size: 86px;
+    padding: 0 0 13px;
+  }
+}

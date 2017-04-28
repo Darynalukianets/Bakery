@@ -116,7 +116,121 @@
 
 // tablet****************************************************************
 @media (max-width: 1023px) {
+  .menu-preview {
+    max-width: 1023px;
+    background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
 
+    .cook-time {
+      position: relative;
+      top: 97px;
+      right: 32px;
+      z-index: 1;
+      float: right;
+    }
+
+    .ready-in {
+      box-shadow: 0px 20px 80px 0px rgba(105,80,58,0.54);
+    }
+  }
+
+  .menu-preview_container {
+    height: 760px;
+    @include clearfix;
+  }
+
+  .menu-preview_widget {
+    display: block;
+    position: relative;
+    height: 512px;
+    float: left;
+    top: 140px;
+    left: 32px;
+    @include clearfix;
+    box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
+    border-bottom-left-radius: 90px;
+  }
+
+  .widget_cover {
+    display: inline-block;
+    width: 282px;
+    height: 512px;
+    // свойство с бэкграундом должно быть завязано на кликнутый элемент в слайдере и передаваться в это свойство
+    background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%, 0 91%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 90%);
+
+    &::before {
+      content:"";
+      position: absolute;
+      top: 461px;
+      left: 0px;
+      border-style: solid;
+      border-width: 50px 0 0 50px;
+      border-top-color: $white;
+      border-right-color: $white;
+      border-bottom-color: $white;
+      border-left-color: transparent;
+    }
+  }
+
+  .widget_content {
+    width: 332px;
+    height: 586px;
+    display: inline-block;
+    position: relative;
+    left: -4px;
+    top: -230px;
+    background: url(../img/menu_preview_watermark.png) 69px 279px no-repeat;
+  }
+
+  // Стили заголовков и контента здесь перекликаются, создать функцию-миксин с дефолтными значениями для этих элементов
+  .widget-hd {
+    position: relative;
+    width: 180px;
+    top: 148px;
+    left: 14px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  .widget-sub-hd {
+    position: relative;
+    top: 148px;
+    left: 17px;
+    text-align: left;
+    padding: 10px 0 49px;
+  }
+
+  .widget_text {
+    position: relative;
+    top: 146px;
+    left: 17px;
+    line-height: 22px;
+    text-align: left;
+    width: 272px;
+  }
+
+  .raiting {
+    position: relative;
+    top: 190px;
+    left: 17px;
+  }
+
+  .widget_slider {
+    width: 305px;
+    position: relative;
+    top: 231px;
+    left: 16px;
+  }
+
+  .slider_hider {
+    width: 237px;
+  }
+
+  .slider_nav {
+    margin: 15px auto 0;
+    width: 84px;
+  }
 }
 
 // laptop****************************************************************
