@@ -4,6 +4,15 @@
   overflow: hidden;
 }
 
+.content-wrapper {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.col-50-left, .col-50-right {
+  width: 100%;
+}
+
 .section-hd {
   font-family: "Alegreya Bold";
   color: $h2DarkGrey;
@@ -25,11 +34,6 @@
 
 //tablet******************************************************************
 @media (max-width: 1023px) {
-
-  //.page-container {
-  //  max-width: 1600px;
-  //  margin: 0 auto;
-  //}
 
   .content-wrapper {
     max-width: 768px;
