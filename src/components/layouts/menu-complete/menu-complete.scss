@@ -1,9 +1,13 @@
 .menu-category {
   background: url(../img/menu_complete_bckgr.jpg) center center no-repeat;
+  max-width: 767px;
+  background-size: auto 1255px;
+  padding-bottom: 50px;
 }
 
 .breakfast {
   display: block;
+  padding: 50px 0 0;
 }
 
 .breakfast_title {
@@ -11,33 +15,56 @@
   font-family: 'Alegreya Bold';
   color: $white;
   text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
 }
 
 .breakfast-sub-hd {
   color: $h3SepiaDark;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 40px;
 }
 
 .breakfast_item {
   display: block;
   text-align: center;
+  margin-bottom: 27px;
+
+  h4 {
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
 
   p {
     color: $lightGrey;
+    line-height: 28px;
+    font-size: 12px;
+    letter-spacing: 1px;
   }
   span {
     font-family: 'Alegreya Regular';
     color: $iconsHazelLight;
+    font-size: 27px;
+    letter-spacing: 2px;
+    line-height: 42px;
   }
 }
 
 .breakfast-cover_box {
-  position: relative;
   display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 11px 11px 29px -5px rgba(0, 0, 0, 0.5);
 }
 
 .breakfast-cover {
-  position: relative;
   background-color: $bodyBckgrColor;
+  width: 100%;
+  outline: 2px dashed $grey; /* Пунктирная рамка */
+  outline-offset: -10px;
+  padding-bottom: 1px;
 
   &::before {
 	content:"";
@@ -51,6 +78,15 @@
 
   h3 {
     text-align: center;
+    margin: 25px 13% 20px;
+    font-size: 33px;
+    line-height: 43px;
+  }
+
+  p {
+    margin: 0 27px;
+    letter-spacing: 0.7px;
+    line-height: 24px;
   }
   a {
     display: block;
@@ -59,29 +95,42 @@
     text-align: center;
     border: 1px solid $grey;
     text-transform: uppercase;
+    width: 164px;
+    margin: 44px auto 49px;
+    padding: 10px 0;
+    font-size: 16px;
   }
 }
 
 .cover-hd {
   display: block;
   text-align: center;
+  padding-top: 49px;
 
   span {
     display: inline-block;
     font-family: 'Alegreya Bold';
     text-transform: uppercase;
     color: $h2DarkGrey;
+    margin: 0 64px;
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 }
 
 .cover_decor {
   background: url(../img/menu-cover_head_img.png) center center no-repeat;
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  background-size: contain;
 }
 
 // tablet*******************************************************************************************
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .menu-category {
     max-width: 1023px;
+    padding-bottom: 0;
 
     &::after {
       content: " ";
@@ -116,7 +165,6 @@
 
   .breakfast-sub-hd {
     font-size: 16px;
-    letter-spacing: 1px;
     line-height: 26px;
     margin-bottom: 59px;
   }
@@ -139,20 +187,20 @@
   }
 
   .breakfast-cover_box {
+    position: relative;
     float: right;
     width: 360px;
     height: 585px;
     top: 89px;
-    box-shadow: 11px 11px 29px -5px rgba(0, 0, 0, 0.5);
   }
 
   .breakfast-cover {
+    position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 6.82% 100%, 0 95%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 95%);
-    width: 100%;
     height: 585px;
-    outline: 2px dashed $grey; /* Пунктирная рамка */
     outline-offset: -10px;
+    padding-bottom: 0;
 
     &::before {
       top: 554px;
@@ -167,12 +215,9 @@
       line-height: 45px;
     }
     p {
-      margin: 0 27px;
-      letter-spacing: 0.7px;
       line-height: 31px;
     }
     a {
-      width: 164px;
       margin: 44px auto 65px;
       padding: 15px 0;
       font-size: 18px;
@@ -185,15 +230,11 @@
     span {
       margin: 0 73px;
       font-size: 14px;
-      letter-spacing: 1px;
     }
   }
 
   .cover_decor {
-    width: 80%;
     height: 86px;
-    margin: 0 auto;
-    background-size: contain;
   }
 }
 
@@ -202,6 +243,7 @@
 @media (min-width:1024px) and (max-width: 1259px) {
   .menu-category {
     max-width: 1259px;
+    padding-bottom: 0;
 
     &::after {
       content: " ";
@@ -236,7 +278,6 @@
 
   .breakfast-sub-hd {
     font-size: 18px;
-    letter-spacing: 1px;
     line-height: 26px;
     margin-bottom: 59px;
   }
@@ -259,20 +300,22 @@
   }
 
   .breakfast-cover_box {
+    position: relative;
     float: right;
     width: 440px;
+    max-width: 440px;
     height: 600px;
     top: 89px;
-    box-shadow: 11px 11px 29px -5px rgba(0, 0, 0, 0.5);
   }
 
   .breakfast-cover {
+    position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 6.82% 100%, 0 95%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 95%);
     width: 100%;
     height: 600px;
-    outline: 2px dashed $grey; /* Пунктирная рамка */
     outline-offset: -10px;
+    padding-bottom: 0;
 
     &::before {
       top: 571px;
@@ -288,7 +331,6 @@
     }
     p {
       margin: 0 51px;
-      letter-spacing: 0.7px;
       line-height: 31px;
     }
     a {
@@ -305,13 +347,13 @@
     span {
       margin: 0 84px;
       font-size: 14px;
-      letter-spacing: 1px;
     }
   }
 
   .cover_decor {
     width: 100%;
     height: 86px;
+    background-size: auto;
   }
 }
 
@@ -319,6 +361,7 @@
 @media (min-width: 1260px) {
   .menu-category {
     max-width: 1600px;
+    padding-bottom: 0;
 
     &::after {
       content: " ";
@@ -353,7 +396,6 @@
 
   .breakfast-sub-hd {
     font-size: 18px;
-    letter-spacing: 1px;
     line-height: 26px;
     margin-bottom: 59px;
   }
@@ -376,20 +418,22 @@
   }
 
   .breakfast-cover_box {
+    position: relative;
     float: right;
     width: 440px;
+    max-width: 440px;
     height: 600px;
     top: 89px;
-    box-shadow: 11px 11px 29px -5px rgba(0, 0, 0, 0.5);
   }
 
   .breakfast-cover {
+    position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 6.82% 100%, 0 95%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 95%);
     width: 100%;
     height: 600px;
-    outline: 2px dashed $grey; /* Пунктирная рамка */
     outline-offset: -10px;
+    padding-bottom: 0;
 
     &::before {
       top: 571px;
@@ -405,7 +449,6 @@
     }
     p {
       margin: 0 51px;
-      letter-spacing: 0.7px;
       line-height: 31px;
     }
     a {
@@ -422,12 +465,12 @@
     span {
       margin: 0 84px;
       font-size: 14px;
-      letter-spacing: 1px;
     }
   }
 
   .cover_decor {
     width: 100%;
     height: 86px;
+    background-size: auto;
   }
 }
