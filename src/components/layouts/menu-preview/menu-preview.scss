@@ -1,19 +1,54 @@
 .menu-preview {
   // изменить поиционирование
-  background: url(..//img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
+  max-width: 767px;
+  background: url(..//img/menu-preview_bckgr.jpg) center center no-repeat;
+  background-size: auto 1035px;
+
+  .cook-time {
+    position: relative;
+    top: 30px;
+    left: 67%;
+    z-index: 1;
+  }
+
+  .ready-in {
+    box-shadow: 0px 20px 80px 0px rgba(105,80,58,0.54);
+  }
+}
+
+.menu-preview_container {
+  padding-bottom: 50px;
 }
 
 .menu-preview_widget {
   background-color: $white;
+  display: block;
+  max-width: 400px;
+  margin: -52px auto 0;
+  box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
 }
 
 .widget_cover {
-  background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
+  background: url(../img/menu_slider_item1.jpg) center center no-repeat;
   // Сюда же должны быть переданы параметры для ::before этого элемент (треугольник-загутый уголок) в случае если в мобильной версии загнутый уголок тоже будет
+  width: 100%;
+  height: 250px;
+  background-size: cover;
 }
 
 .widget_content {
-  background: url(../img/menu_preview_watermark.png) 275px 287px no-repeat;
+  background: url(../img/menu_preview_watermark.png) 175px 168px no-repeat;
+  background-size: auto 250px;
+  text-align: center;
+}
+
+.widget-hd {
+  padding: 15px 0 4px;
+}
+
+.widget_text {
+  padding: 50px 24px 30px;
+  line-height: 22px;
 }
 
 .raiting {
@@ -36,11 +71,16 @@
 
 .widget_slider {
   display: block;
+  margin: 30px 0 0 0;
   @include clearfix;
 }
 
+.slider_hider {
+  width: 237px;
+}
+
 .slider_btn {
-  display: block;
+  display: none;
   width: 34px;
   height: 34px;
   margin-top: 28px;
@@ -97,6 +137,8 @@
 
 .slider_nav {
   display: block;
+  margin: 15px auto;
+  width: 84px;
   @include clearfix;
 }
 
@@ -115,36 +157,35 @@
 }
 
 // tablet****************************************************************
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .menu-preview {
     max-width: 1023px;
     background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
+    background-size: auto;
 
     .cook-time {
       position: relative;
       top: 97px;
-      right: 32px;
+      left: -32px;
       z-index: 1;
       float: right;
-    }
-
-    .ready-in {
-      box-shadow: 0px 20px 80px 0px rgba(105,80,58,0.54);
     }
   }
 
   .menu-preview_container {
-    height: 760px;
+    height: 710px;
     @include clearfix;
   }
 
   .menu-preview_widget {
     display: block;
     position: relative;
+    max-width: 970px;
     height: 512px;
     float: left;
     top: 140px;
     left: 32px;
+    margin: 0;
     @include clearfix;
     box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
     border-bottom-left-radius: 90px;
@@ -181,6 +222,8 @@
     left: -4px;
     top: -230px;
     background: url(../img/menu_preview_watermark.png) 69px 279px no-repeat;
+    background-size: auto;
+    text-align: inherit;
   }
 
   // Стили заголовков и контента здесь перекликаются, создать функцию-миксин с дефолтными значениями для этих элементов
@@ -189,6 +232,7 @@
     width: 180px;
     top: 148px;
     left: 14px;
+    padding: 0;
     text-align: left;
     line-height: 40px;
   }
@@ -205,7 +249,7 @@
     position: relative;
     top: 146px;
     left: 17px;
-    line-height: 22px;
+    padding: 0;
     text-align: left;
     width: 272px;
   }
@@ -221,15 +265,19 @@
     position: relative;
     top: 231px;
     left: 16px;
+    margin: 0;
   }
 
   .slider_hider {
     width: 237px;
   }
 
+  .slider_btn {
+    display: block;
+  }
+
   .slider_nav {
     margin: 15px auto 0;
-    width: 84px;
   }
 }
 
@@ -238,32 +286,31 @@
   .menu-preview {
     max-width: 1259px;
     background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
+    background-size: auto;
 
     .cook-time {
       position: relative;
       top: 97px;
-      right: 60px;
+      left: -60px;
       z-index: 1;
       float: right;
-    }
-
-    .ready-in {
-      box-shadow: 0px 20px 80px 0px rgba(105,80,58,0.54);
     }
   }
 
   .menu-preview_container {
-    height: 760px;
+    height: 710px;
     @include clearfix;
   }
 
   .menu-preview_widget {
     display: block;
     position: relative;
+    max-width: 970px;
     height: 512px;
     float: left;
     top: 140px;
     left: 62px;
+    margin: 0;
     @include clearfix;
     box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
     border-bottom-left-radius: 90px;
@@ -299,6 +346,9 @@
     position: relative;
     left: -4px;
     top: -230px;
+    text-align: inherit;
+    background: url(../img/menu_preview_watermark.png) 275px 287px no-repeat;
+    background-size: auto;
   }
 
   // Стили заголовков и контента здесь перекликаются, создать функцию-миксин с дефолтными значениями для этих элементов
@@ -306,6 +356,7 @@
     position: relative;
     top: 148px;
     left: 32px;
+    padding: 0;
     text-align: left;
   }
 
@@ -321,6 +372,7 @@
     position: relative;
     top: 146px;
     left: 32px;
+    padding: 0;
     line-height: 24px;
     text-align: left;
     width: 405px;
@@ -337,15 +389,19 @@
     position: relative;
     top: 231px;
     left: 32px;
+    margin: 0;
   }
 
   .slider_hider {
     width: 343px;
   }
 
+  .slider_btn {
+    display: block;
+  }
+
   .slider_nav {
     margin: 15px auto 0;
-    width: 84px;
   }
 }
 
@@ -354,32 +410,31 @@
   .menu-preview {
     max-width: 1600px;
     background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
+    background-size: auto;
 
     .cook-time {
       position: relative;
       top: 97px;
-      right: 95px;
+      left: -95px;
       z-index: 1;
       float: right;
-    }
-
-    .ready-in {
-      box-shadow: 0px 20px 80px 0px rgba(105,80,58,0.54);
     }
   }
 
   .menu-preview_container {
-    height: 760px;
+    height: 710px;
     @include clearfix;
   }
 
   .menu-preview_widget {
     display: block;
     position: relative;
+    max-width: 970px;
     height: 512px;
     float: left;
     top: 140px;
     left: 95px;
+    margin: 0;
     @include clearfix;
     box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
     border-bottom-left-radius: 90px;
@@ -415,6 +470,9 @@
     position: relative;
     left: -4px;
     top: -230px;
+    text-align: inherit;
+    background: url(../img/menu_preview_watermark.png) 275px 287px no-repeat;
+    background-size: auto;
   }
 
   // Стили заголовков и контента здесь перекликаются, создать функцию-миксин с дефолтными значениями для этих элементов
@@ -422,6 +480,7 @@
     position: relative;
     top: 148px;
     left: 64px;
+    padding: 0;
     text-align: left;
   }
 
@@ -437,6 +496,7 @@
     position: relative;
     top: 146px;
     left: 64px;
+    padding: 0;
     line-height: 24px;
     text-align: left;
     width: 405px;
@@ -453,14 +513,18 @@
     position: relative;
     top: 231px;
     left: 62px;
+    margin: 0;
   }
 
   .slider_hider {
     width: 343px;
   }
 
+  .slider_btn {
+    display: block;
+  }
+
   .slider_nav {
     margin: 15px auto 0;
-    width: 84px;
   }
 }
