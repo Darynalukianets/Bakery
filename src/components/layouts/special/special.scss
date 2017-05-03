@@ -1,29 +1,61 @@
 .special {
   @include clearfix;
+
+  .cook-time {
+    position: relative;
+    top: -70px;
+  }
 }
 
 .special_hd {
   display: block;
   margin: 0 auto;
-  background: url(../img/special_header_bckgr.png) center center no-repeat;
+  background: url(../img/special_header_bckgr.png) center 5px no-repeat;
+  padding: 70px 0 20px;
 
   h1 {
     text-align: center;
+    letter-spacing: 1.2px;
+  }
+
+  h2 {
+    padding-top: 6px;
+    letter-spacing: 1px;
   }
 }
 
+.ingredients-box {
+  display: block;
+}
+
+.ingredients {
+  width: 100%;
+}
+
 .ingredient {
+  display: block;
+  margin-bottom: 25px;
 
   h4 {
     font-family: 'Alegreya Bold';
     color: $h3Brown;
     text-align: center;
+    padding-top: 2px;
+    font-size: 21px;
+    letter-spacing: 1.2px;
+  }
+  p {
+    width: 300px;
+    margin: 0 auto;
+    letter-spacing: 1.4px;
+    line-height: 18px;
   }
 }
 
 .ingredient_img {
   width: 100px;
   height: 100px;
+  margin: 0 auto;
   border-radius: 50px;
   box-shadow: 0 14px 13px -2px $lightShadow;
 }
@@ -40,20 +72,42 @@
   background: url(../img/ingredient_img3.jpg) -31px -3px no-repeat;
 }
 
+.recipe-preview {
+  display: block;
+  width: 100%;
+  max-width: 470px;
+  margin: 50px auto 0;
+}
+
 .recipe-btn {
   @extend %dashed-btn;
   border-color: $iconsHazelLight;
   color: $iconsHazelLight;
   background-color: $white;
+  display: block;
+  width: 121px;
+  height: 40px;
+  position: relative;
+  top: -314px;
+  left: 14px;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .recipe_img {
   background: url(../img/special_img.jpg) -14px -29px no-repeat;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  border: 10px solid $white;
+  box-shadow: -1px 11px 13px 0 $lightShadow;
+  background-size: auto 330px;
 }
 
 
+
 // tablet*******************************************************************************************
-@media (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   .special {
 
     .cook-time {
@@ -66,12 +120,10 @@
   }
 
   .special_hd {
-    padding-top: 96px;
+    padding: 96px 0 0 0;
     width: 480px;
+    background: url(../img/special_header_bckgr.png) center center no-repeat;
 
-    h1 {
-      letter-spacing: 1.2px;
-    }
     h2 {
       padding-top: 10px;
       letter-spacing: 1.4px;
@@ -79,29 +131,22 @@
   }
 
   .ingredients-box {
-    display: block;
     float: left;
     margin-top: -6px;
     width: 25.4%;
   }
 
-  .ingredients {
-    width: 100%;
-  }
-
   .ingredient {
-    display: block;
     margin-bottom: 55px;
 
     h4 {
       margin-left: -4px;
       padding-top: 15px;
       font-size: 24px;
-      letter-spacing: 1.2px;
     }
     p {
+      width: auto;
       padding: 0 20px 14px;
-      letter-spacing: 1.4px;
       line-height: 18px;
       font-size: 12px;
     }
@@ -109,7 +154,7 @@
 
   .ingredient_img {
     display: block;
-    margin-left: 47px;
+    margin: 0 0 0 47px;
   }
 
   .recipe-preview {
@@ -117,17 +162,16 @@
     float: right;
     width: 70%;
     height: 680px;
+    max-width: 506px;
+    margin: 0;
   }
 
   .recipe-btn {
-    display: block;
     width: 137px;
     height: 59px;
-    position: relative;
     top: 40px;
     left: -40px;
     font-size: 16px;
-    letter-spacing: 1px;
   }
 
   .recipe_img {
@@ -139,6 +183,9 @@
     left: -30px;
     border: 10px solid $white;
     box-shadow: -1px 11px 13px 0 $lightShadow;
+    background: url(../img/special_img.jpg) -152px -29px no-repeat;
+    background-size: auto;
+    box-sizing: content-box;
   }
 }
 
@@ -156,12 +203,10 @@
   }
 
   .special_hd {
-    padding-top: 96px;
+    padding: 96px 0 0 0;
     width: 480px;
+    background: url(../img/special_header_bckgr.png) center center no-repeat;
 
-    h1 {
-      letter-spacing: 1.2px;
-    }
     h2 {
       padding-top: 10px;
       letter-spacing: 1.4px;
@@ -169,54 +214,46 @@
   }
 
   .ingredients-box {
-    display: block;
     float: left;
     margin-top: -6px;
     width: 25.4%;
   }
 
-  .ingredients {
-    width: 100%;
-  }
-
   .ingredient {
-    display: block;
     margin-bottom: 55px;
 
     h4 {
       margin-left: -4px;
       padding-top: 23px;
       font-size: 29px;
-      letter-spacing: 1.2px;
     }
     p {
+      width: auto;
       padding-top: 19px;
-      letter-spacing: 1.4px;
       line-height: 20px;
     }
   }
 
   .ingredient_img {
     display: block;
-    margin-left: 80px;
+    margin: 0 0 0 80px;
   }
 
   .recipe-preview {
     display: block;
     float: right;
     width: 70%;
+    max-width: 685px;
     height: 680px;
+    margin: 0;
   }
 
   .recipe-btn {
-    display: block;
     width: 171px;
     height: 59px;
-    position: relative;
     top: 45px;
     left: -48px;
     font-size: 18px;
-    letter-spacing: 1px;
   }
 
   .recipe_img {
@@ -228,6 +265,8 @@
     left: -30px;
     border: 10px solid $white;
     box-shadow: -1px 11px 13px 0 $lightShadow;
+    background-size: auto;
+    box-sizing: content-box;
   }
 }
 
@@ -245,12 +284,10 @@
   }
 
   .special_hd {
-    padding-top: 96px;
+    padding: 96px 0 0 0;
     width: 480px;
+    background: url(../img/special_header_bckgr.png) center center no-repeat;
 
-    h1 {
-      letter-spacing: 1.2px;
-    }
     h2 {
       padding-top: 10px;
       letter-spacing: 1.4px;
@@ -258,7 +295,6 @@
   }
 
   .ingredients-box {
-    display: block;
     float: left;
     margin-top: -6px;
     width: 23.4%;
@@ -269,43 +305,40 @@
   }
 
   .ingredient {
-    display: block;
     margin-bottom: 55px;
 
     h4 {
       margin-left: -4px;
       padding-top: 23px;
       font-size: 29px;
-      letter-spacing: 1.2px;
     }
     p {
+      width: auto;
       padding-top: 19px;
-      letter-spacing: 1.4px;
       line-height: 20px;
     }
   }
 
   .ingredient_img {
     display: block;
-    margin-left: 95px;
+    margin: 0 0 0 95px;
   }
 
   .recipe-preview {
     display: block;
     float: right;
     width: 70%;
+    max-width: 882px;
     height: 680px;
+    margin: 0;
   }
 
   .recipe-btn {
-    display: block;
     width: 171px;
     height: 59px;
-    position: relative;
     top: 45px;
     left: 20px;
     font-size: 18px;
-    letter-spacing: 1px;
   }
 
   .recipe_img {
@@ -317,5 +350,7 @@
     left: 42px;
     border: 10px solid $white;
     box-shadow: -1px 11px 13px 0 $lightShadow;
+    background-size: auto;
+    box-sizing: content-box;
   }
 }

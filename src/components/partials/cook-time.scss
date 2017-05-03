@@ -1,6 +1,7 @@
 .cook-time {
   display: block;
-  width: 100px;
+  width: 308px;
+  margin: 0 auto;
 }
 
 .cook-time-hd {
@@ -18,7 +19,7 @@
   display: block;
   font-size: 60px;
   letter-spacing: 6px;
-  padding: 8px 0 6px 7px;
+  padding: 0;
 }
 
 .cook-time-units {
@@ -32,9 +33,15 @@
 
 .prep, .cook {
   @extend %cook-time-item;
+  display: inline-block;
+  width: 100px;
+  padding: 5px 0 4px;
+
 }
 
 .ready-in {
+  display: inline-block;
+  width: 100px;
   padding: 5px 0 4px;
   background: url(..//img/ready_in_bckgr.png) center center no-repeat;
   text-align: center;
@@ -53,11 +60,18 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .cook-time {
     width: 150px;
+    margin: 0;
   }
 
   .cook-time-hd {
     font-size: 17px;
     letter-spacing: 1.5px;
+  }
+
+  .cook-time-amount {
+    font-size: 60px;
+    letter-spacing: 6px;
+    padding: 8px 0 6px 7px;
   }
 
   .cook-time-units {
@@ -66,11 +80,14 @@
   }
 
   .prep, .cook {
-    height: 150px;
+    display: block;
+    width: 150px;
     padding: 20px 0 19px;
   }
 
   .ready-in {
+    display: block;
+    width: 150px;
     padding: 15px 0 14px;
   }
 
@@ -84,6 +101,7 @@
 @media (min-width: 1024px) {
   .cook-time {
     width: 200px;
+    margin: 0;
   }
 
   .cook-time-hd {
@@ -102,7 +120,15 @@
     letter-spacing: 2.5px;
   }
 
+  .prep, .cook {
+    display: block;
+    width: 200px;
+    padding: 48px 0 46px;
+  }
+
   .ready-in {
+    display: block;
+    width: 200px;
     padding: 33px 0 30px;
   }
 
