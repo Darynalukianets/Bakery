@@ -1,3 +1,7 @@
+.footer {
+  padding-bottom: 50px;
+}
+
 .ft-nav {
   @extend %nav;
   text-align: center;
@@ -5,19 +9,36 @@
   border-bottom: 1px solid $lightGrey;
   background-color: $ftNavBckgr;
   box-shadow: inset 0px 0px 17px 11px $bodyBckgrColor;
+
+  width: 96%;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin: 0 auto;
+}
+
+.ft-nav_item {
+  display: inline-block;
+
+  a {
+    line-height: 37px;
+  }
 }
 
 .ft-nav_separator {
   @extend %nav-separator;
+  padding: 0 2.5%;
 }
 
 .ft-logo {
   @extend %logo;
   color: $h2DarkGrey;
+  padding: 0 0 16px 0;
+  vertical-align: bottom;
+  text-align: center;
 }
 
 // tablet******************************************************************************************
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .footer {
     padding-bottom: 70px;
   }
@@ -25,7 +46,7 @@
   .ft-nav {
     width: 39.8%;
     display: inline-block;
-    margin-top: 59px;
+    margin: 59px 0 0 0;
     font-size: 13px;
     letter-spacing: 3px;
   }
@@ -45,7 +66,6 @@
   .ft-logo {
     display: inline-block;
     padding: 0 0 16px 4px;
-    vertical-align: bottom;
     font-size: 28px;
   }
 }
@@ -60,7 +80,7 @@
   .ft-nav {
     width: 38.4%;
     display: inline-block;
-    margin-top: 59px;
+    margin: 59px 0 0 0;
   }
 
   .ft-nav_item {
@@ -78,7 +98,6 @@
   .ft-logo {
     display: inline-block;
     padding: 0 34px 21px 43px;
-    vertical-align: bottom;
   }
 }
 
@@ -92,7 +111,7 @@
   .ft-nav {
     width: 40.8%;
     display: inline-block;
-    margin-top: 59px;
+    margin: 59px 0 0 0;
   }
 
   .ft-nav_item {
@@ -110,7 +129,6 @@
   .ft-logo {
     display: inline-block;
     padding: 0 34px 21px 43px;
-    vertical-align: bottom;
   }
 }
 
