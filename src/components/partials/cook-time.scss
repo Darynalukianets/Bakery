@@ -60,7 +60,6 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .cook-time {
     width: 150px;
-    margin: 0;
   }
 
   .cook-time-hd {
@@ -68,25 +67,16 @@
     letter-spacing: 1.5px;
   }
 
-  .cook-time-amount {
-    font-size: 60px;
-    letter-spacing: 6px;
-    padding: 8px 0 6px 7px;
-  }
-
   .cook-time-units {
     font-size: 15px;
-    letter-spacing: 2.5px;
   }
 
   .prep, .cook {
-    display: block;
     width: 150px;
     padding: 20px 0 19px;
   }
 
   .ready-in {
-    display: block;
     width: 150px;
     padding: 15px 0 14px;
   }
@@ -94,14 +84,12 @@
   .ready-in_amount {
     font-size: 86px;
     padding: 0 0 13px;
-    letter-spacing: 10px;
   }
 }
 //laptop+desktop
 @media (min-width: 1024px) {
   .cook-time {
     width: 200px;
-    margin: 0;
   }
 
   .cook-time-hd {
@@ -109,32 +97,46 @@
     letter-spacing: 1.9px;
   }
 
-  .cook-time-amount {
-    font-size: 60px;
-    letter-spacing: 6px;
-    padding: 8px 0 6px 7px;
-  }
-
   .cook-time-units {
     font-size: 17px;
-    letter-spacing: 2.5px;
   }
 
   .prep, .cook {
-    display: block;
     width: 200px;
     padding: 48px 0 46px;
   }
 
   .ready-in {
-    display: block;
     width: 200px;
     padding: 33px 0 30px;
   }
 
   .ready-in_amount {
     font-size: 92px;
-    letter-spacing: 10px;
     padding: 13px 0 0 13px;
+  }
+}
+
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+
+  .cook-time {
+    margin: 0;
+  }
+
+  .cook-time-amount {
+    padding: 8px 0 6px 7px;
+  }
+
+  .cook-time-units {
+    letter-spacing: 2.5px;
+  }
+
+  .prep, .cook, .ready-in {
+    display: block;
+  }
+
+  .ready-in_amount {
+    letter-spacing: 10px;
   }
 }
