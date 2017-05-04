@@ -1,5 +1,4 @@
 .menu-preview {
-  // изменить поиционирование
   max-width: 767px;
   background: url(..//img/menu-preview_bckgr.jpg) center center no-repeat;
   background-size: auto 1035px;
@@ -30,7 +29,6 @@
 
 .widget_cover {
   background: url(../img/menu_slider_item1.jpg) center center no-repeat;
-  // Сюда же должны быть переданы параметры для ::before этого элемент (треугольник-загутый уголок) в случае если в мобильной версии загнутый уголок тоже будет
   width: 100%;
   height: 250px;
   background-size: cover;
@@ -160,124 +158,51 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .menu-preview {
     max-width: 1023px;
-    background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
-    background-size: auto;
 
     .cook-time {
-      position: relative;
-      top: 97px;
       left: -32px;
-      z-index: 1;
-      float: right;
     }
-  }
-
-  .menu-preview_container {
-    height: 710px;
-    @include clearfix;
   }
 
   .menu-preview_widget {
-    display: block;
-    position: relative;
-    max-width: 970px;
-    height: 512px;
-    float: left;
-    top: 140px;
     left: 32px;
-    margin: 0;
-    @include clearfix;
-    box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
-    border-bottom-left-radius: 90px;
   }
 
   .widget_cover {
-    display: inline-block;
     width: 282px;
-    height: 512px;
-    // свойство с бэкграундом должно быть завязано на кликнутый элемент в слайдере и передаваться в это свойство
-    background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%, 0 91%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 90%);
-
-    &::before {
-      content:"";
-      position: absolute;
-      top: 461px;
-      left: 0px;
-      border-style: solid;
-      border-width: 50px 0 0 50px;
-      border-top-color: $white;
-      border-right-color: $white;
-      border-bottom-color: $white;
-      border-left-color: transparent;
-    }
   }
 
   .widget_content {
     width: 332px;
-    height: 586px;
-    display: inline-block;
-    position: relative;
-    left: -4px;
-    top: -230px;
-    background: url(../img/menu_preview_watermark.png) 69px 279px no-repeat;
-    background-size: auto;
-    text-align: inherit;
+    height: 642px;
+    background: url(../img/menu_preview_watermark.png) 69px 340px no-repeat;
   }
 
-  // Стили заголовков и контента здесь перекликаются, создать функцию-миксин с дефолтными значениями для этих элементов
   .widget-hd {
-    position: relative;
     width: 180px;
-    top: 148px;
     left: 14px;
-    padding: 0;
-    text-align: left;
     line-height: 40px;
   }
 
   .widget-sub-hd {
-    position: relative;
-    top: 148px;
     left: 17px;
-    text-align: left;
     padding: 10px 0 49px;
   }
 
   .widget_text {
-    position: relative;
-    top: 146px;
     left: 17px;
-    padding: 0;
-    text-align: left;
     width: 272px;
   }
 
   .raiting {
-    position: relative;
-    top: 190px;
     left: 17px;
   }
 
   .widget_slider {
     width: 305px;
-    position: relative;
-    top: 231px;
     left: 16px;
-    margin: 0;
-  }
-
-  .slider_hider {
-    width: 237px;
-  }
-
-  .slider_btn {
-    display: block;
-  }
-
-  .slider_nav {
-    margin: 15px auto 0;
   }
 }
 
@@ -285,14 +210,102 @@
 @media (min-width:1024px) and (max-width: 1259px) {
   .menu-preview {
     max-width: 1259px;
+
+    .cook-time {
+      left: -60px;
+    }
+  }
+
+  .menu-preview_widget {
+    left: 62px;
+  }
+
+  .widget_cover {
+    width: 335px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 90%);
+  }
+
+  .widget_content {
+    width: 484px;
+    background: url(../img/menu_preview_watermark.png) 217px 287px no-repeat;
+  }
+
+  .widget-hd {
+    left: 32px;
+  }
+
+  .widget-sub-hd {
+    left: 32px;
+  }
+
+  .widget_text {
+    left: 32px;
+  }
+
+  .raiting {
+    left: 32px;
+  }
+
+  .widget_slider {
+    left: 32px;
+  }
+}
+
+// desktopL***************************************************************
+@media (min-width: 1260px) {
+  .menu-preview {
+    max-width: 1600px;
+
+    .cook-time {
+      left: -95px;
+    }
+  }
+
+  .menu-preview_widget {
+    left: 95px;
+  }
+
+  .widget_cover {
+    width: 419px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 90%);
+  }
+
+  .widget_content {
+    width: 542px;
+    background: url(../img/menu_preview_watermark.png) 275px 287px no-repeat;
+  }
+
+  .widget-hd {
+    left: 64px;
+  }
+
+  .widget-sub-hd {
+    left: 64px;
+  }
+
+  .widget_text {
+    left: 64px;
+  }
+
+  .raiting {
+    left: 63px;
+  }
+
+  .widget_slider {
+    left: 62px;
+  }
+}
+
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+  .menu-preview {
     background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
     background-size: auto;
 
     .cook-time {
-      position: relative;
       top: 97px;
-      left: -60px;
-      z-index: 1;
       float: right;
     }
   }
@@ -303,27 +316,21 @@
   }
 
   .menu-preview_widget {
-    display: block;
     position: relative;
     max-width: 970px;
     height: 512px;
     float: left;
     top: 140px;
-    left: 62px;
     margin: 0;
     @include clearfix;
-    box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
     border-bottom-left-radius: 90px;
   }
 
   .widget_cover {
     display: inline-block;
-    width: 335px;
     height: 512px;
     // свойство с бэкграундом должно быть завязано на кликнутый элемент в слайдере и передаваться в это свойство
     background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%, 0 91%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 90%);
 
     &::before {
       content:"";
@@ -340,22 +347,17 @@
   }
 
   .widget_content {
-    width: 484px;
-    height: 586px;
     display: inline-block;
     position: relative;
     left: -4px;
     top: -230px;
-    text-align: inherit;
-    background: url(../img/menu_preview_watermark.png) 275px 287px no-repeat;
     background-size: auto;
+    text-align: inherit;
   }
 
-  // Стили заголовков и контента здесь перекликаются, создать функцию-миксин с дефолтными значениями для этих элементов
   .widget-hd {
     position: relative;
     top: 148px;
-    left: 32px;
     padding: 0;
     text-align: left;
   }
@@ -363,37 +365,25 @@
   .widget-sub-hd {
     position: relative;
     top: 148px;
-    left: 32px;
     text-align: left;
-    padding: 10px 0 62px;
   }
 
   .widget_text {
     position: relative;
     top: 146px;
-    left: 32px;
     padding: 0;
-    line-height: 24px;
     text-align: left;
-    width: 405px;
   }
 
   .raiting {
     position: relative;
     top: 190px;
-    left: 32px;
   }
 
   .widget_slider {
-    width: 429px;
     position: relative;
     top: 231px;
-    left: 32px;
     margin: 0;
-  }
-
-  .slider_hider {
-    width: 343px;
   }
 
   .slider_btn {
@@ -405,126 +395,27 @@
   }
 }
 
-// desktopL***************************************************************
-@media (min-width: 1260px) {
-  .menu-preview {
-    max-width: 1600px;
-    background: url(../img/menu-preview_bckgr.jpg) -8px -255px no-repeat;
-    background-size: auto;
-
-    .cook-time {
-      position: relative;
-      top: 97px;
-      left: -95px;
-      z-index: 1;
-      float: right;
-    }
-  }
-
-  .menu-preview_container {
-    height: 710px;
-    @include clearfix;
-  }
-
-  .menu-preview_widget {
-    display: block;
-    position: relative;
-    max-width: 970px;
-    height: 512px;
-    float: left;
-    top: 140px;
-    left: 95px;
-    margin: 0;
-    @include clearfix;
-    box-shadow: -2px 14px 29px 5px rgba(0,0,0,0.33);
-    border-bottom-left-radius: 90px;
-  }
-
-  .widget_cover {
-    display: inline-block;
-    width: 419px;
-    height: 512px;
-    // свойство с бэкграундом должно быть завязано на кликнутый элемент в слайдере и передаваться в это свойство
-    background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%, 0 91%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 90%);
-
-    &::before {
-  	content:"";
-  	position: absolute;
-  	top: 461px;
-  	left: 0px;
-  	border-style: solid;
-  	border-width: 50px 0 0 50px;
-  	border-top-color: $white;
-    border-right-color: $white;
-    border-bottom-color: $white;
-    border-left-color: transparent;
-    }
-  }
+//laptop+desktop*****************************************************************************
+@media (min-width:1024px) {
 
   .widget_content {
-    width: 542px;
-    height: 586px;
-    display: inline-block;
-    position: relative;
-    left: -4px;
-    top: -230px;
-    text-align: inherit;
-    background: url(../img/menu_preview_watermark.png) 275px 287px no-repeat;
-    background-size: auto;
-  }
-
-  // Стили заголовков и контента здесь перекликаются, создать функцию-миксин с дефолтными значениями для этих элементов
-  .widget-hd {
-    position: relative;
-    top: 148px;
-    left: 64px;
-    padding: 0;
-    text-align: left;
+    height: 585px;
   }
 
   .widget-sub-hd {
-    position: relative;
-    top: 148px;
-    left: 64px;
-    text-align: left;
     padding: 10px 0 62px;
   }
 
   .widget_text {
-    position: relative;
-    top: 146px;
-    left: 64px;
-    padding: 0;
     line-height: 24px;
-    text-align: left;
     width: 405px;
-  }
-
-  .raiting {
-    position: relative;
-    top: 190px;
-    left: 63px;
   }
 
   .widget_slider {
     width: 429px;
-    position: relative;
-    top: 231px;
-    left: 62px;
-    margin: 0;
   }
 
   .slider_hider {
     width: 343px;
-  }
-
-  .slider_btn {
-    display: block;
-  }
-
-  .slider_nav {
-    margin: 15px auto 0;
   }
 }

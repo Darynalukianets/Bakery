@@ -2,13 +2,10 @@
   background: url(../img/about_bckgr.png) center center no-repeat;
   background-size: cover;
 }
-// создать миксин для одинаковых стилей (миксин с передай параметров или миксин с дефолтным значением,которое потом можно изменять!) или использовать @extend, чтобы стили для заголовков не повторялись снова и снова
 
 .about_container {
   padding: 1px 0 23px;
 }
-
-
 
 .about_title {
   text-align: center;
@@ -16,7 +13,6 @@
 }
 
 .about_text {
-  //сверить с tablet  оптимизировать
   width: 85.73%;
   margin: 0 auto;
   padding: 50px 0 30px;
@@ -151,66 +147,23 @@
 // tablet*****************************************************************
 @media (min-width: 768px) and (max-width: 1023px)  {
   .about_container {
-    margin-bottom: -12px;
     padding: 0 0 77px 0;
-    @include clearfix;
-  }
-
-  .about_title {
-    margin: 91px 0 10px 3px;
-  }
-
-  .about_sub-title {
-    margin-left: 4px;
-  }
-
-  .about_text {
-    width: 85.73%;
-    margin: 0 auto;
-    padding: 50px 0 30px;
-    line-height: 22px;
-  }
-
-  .chef_title {
-    padding-left: 2px;
-  }
-
-  .chef_name {
-    display: inline-block;
-    width: 82px;
-    font-size: 21px;
-    line-height: 54px;
-    letter-spacing: 0.6px;
-    padding-top: 4px;
-    vertical-align: top;
-    margin-top: 40px;
   }
 
   .chef_img {
-    display: inline-block;
     margin: 20px 13px 0;
   }
 
   .quote-box {
     width: 335px;
-    margin: 9px auto;
   }
 
   .quote_text {
-    width: 240px;
     margin: -4px 53px 0;
-    font-size: 23px;
-    letter-spacing: 0.3px;
-    line-height: 29px;
   }
 
   .quote-mark {
-    height: 27px;
     font-size: 51px;
-  }
-
-  .quote-open {
-    margin-top: 13px;
   }
 
   .about_media {
@@ -219,26 +172,17 @@
   }
 
   .media_item {
-    display: inline-block;
     margin: 5px 0.59% 7px;
     width: 47.3%;
-    height: 200px;
-    outline: 3px solid $white;
-    outline-offset: -7px;
   }
 
   .sticker {
-    width: 54.45%;
     height: 224px;
-    position: relative;
     top: 336px;
     left: 22%;
-    background-size: cover;
-    text-align: center;
   }
 
   .sticker_text {
-    width: 160px;
     padding-top: 75px;
     font-size: 23px;
     line-height: 26px;
@@ -253,110 +197,21 @@
 // laptop*****************************************************************
 @media (min-width:1024px) and (max-width: 1259px) {
   .about_container {
-    margin-bottom: -12px;
     padding: 0 0 77px 0;
-    @include clearfix;
-  }
-
-  .about_title {
-    margin: 91px 0 10px 3px;
-  }
-
-  .about_sub-title {
-    margin-left: 4px;
-  }
-
-  .about_text {
-    width: 78.73%;
-    margin: 0 auto;
-    padding: 60px 0 40px;
-    line-height: 24px;
-  }
-
-  .chef_title {
-    padding-left: 2px;
-  }
-
-  .chef_name {
-    display: inline-block;
-    width: 111px;
-    font-size: 24px;
-    line-height: 54px;
-    letter-spacing: 0.6px;
-    padding-top: 4px;
-    vertical-align: top;
-    margin-top: 60px;
-  }
-
-  .chef_img {
-    display: inline-block;
-    margin: 40px 21px 0;
-  }
-
-  .quote-box {
-    width: 410px;
-    margin: 9px auto;
-  }
-
-  .quote_text {
-    width: 240px;
-    margin: -4px 84px 0;
-    font-size: 25px;
-    letter-spacing: 0.3px;
-    line-height: 29px;
-  }
-
-  .quote-mark {
-    height: 27px;
-    font-size: 57px;
-  }
-
-  .quote-open {
-    margin-top: 13px;
   }
 
   .about_media {
     margin: -155px 0 0 0;
-    padding: 0;
   }
 
   .media_item {
-    display: inline-block;
-    margin: 10px 1.59% 7px;
     width: 46.3%;
-    height: 250px;
-    outline: 5px solid $white;
-    outline-offset: -11px;
   }
 
   .sticker {
-    width: 54.45%;
-    height: 280px;
-    position: relative;
     top: 427px;
     left: 23%;
     text-align: center;
-    background-size: cover;
-  }
-
-  .sticker_text {
-    width: 160px;
-    padding-top: 88px;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: 1.4px;
-  }
-
-  .top-left {
-    background: url(../img/about_food_top_left.jpg) -18px -24px no-repeat;
-  }
-
-  .bottom-left {
-    background: url(../img/about_food_bottom_left.jpg) -7px -99px no-repeat;
-  }
-
-  .bottom-right {
-    background: url(../img/about_food_bottom_right.jpg) -47px -25px no-repeat;
   }
 }
 // desktopL***************************************************************
@@ -365,6 +220,26 @@
   .about_container {
     margin-bottom: -10px;
     padding: 0 0 101px 0;
+  }
+
+  .about_media {
+    margin: -180px 0 0 0;
+  }
+
+  .media_item {
+    width: 46.5%;
+  }
+
+  .sticker {
+    width: 44.45%;
+    top: 427px;
+    left: 28%;
+    text-align: center;
+  }
+}
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+  .about_container {
     @include clearfix;
   }
 
@@ -376,81 +251,87 @@
     margin-left: 4px;
   }
 
-  .about_text {
-    width: 78.73%;
-    margin: 0 auto;
-    padding: 60px 0 40px;
-    line-height: 24px;
-  }
-
-  .chef_title {
-    padding-left: 2px;
-  }
-
-  .chef_name {
-    display: inline-block;
-    width: 111px;
-    font-size: 24px;
-    line-height: 54px;
-    letter-spacing: 0.6px;
-    padding-top: 4px;
-    vertical-align: top;
-    margin-top: 60px;
-  }
-
-  .chef_img {
-    display: inline-block;
-    margin: 40px 21px 0;
-  }
-
-  .quote-box {
-    width: 410px;
-    margin: 9px auto;
-  }
-
-  .quote_text {
-    width: 240px;
-    margin: -4px 84px 0;
-    font-size: 25px;
-    letter-spacing: 0.3px;
-    line-height: 29px;
-  }
-
   .quote-mark {
     height: 27px;
-    font-size: 57px;
   }
 
   .quote-open {
     margin-top: 13px;
   }
 
+  .sticker {
+    background-size: cover;
+  }
+
+  .sticker_text {
+    width: 160px;
+  }
+}
+//tablet+laptop******************************************************************************
+@media (min-width: 768px) and (max-width: 1259px) {
+  .about_container {
+    margin-bottom: -12px;
+  }
+
+  .sticker {
+    width: 54.45%;
+    height: 224px;
+    position: relative;
+    top: 336px;
+    left: 22%;
+    background-size: cover;
+    text-align: center;
+  }
+}
+//laptop+desktop*****************************************************************************
+@media (min-width:1024px) {
+  .about_text {
+    width: 78.73%;
+    padding: 60px 0 40px;
+    line-height: 24px;
+  }
+
+  .chef_name {
+    width: 111px;
+    font-size: 24px;
+    margin-top: 60px;
+  }
+
+  .chef_img {
+    margin: 40px 21px 0;
+  }
+
+  .quote-box {
+    width: 410px;
+  }
+
+  .quote_text {
+    margin: -4px 84px 0;
+    font-size: 25px;
+  }
+
+  .quote-mark {
+    font-size: 57px;
+  }
+
   .about_media {
-    margin: -180px 0 0 0;
     padding: 0;
   }
 
   .media_item {
-    display: inline-block;
     margin: 10px 1.59% 7px;
-    width: 46.5%;
     height: 250px;
     outline: 5px solid $white;
     outline-offset: -11px;
   }
 
   .sticker {
-    width: 44.45%;
     height: 280px;
-    position: relative;
     top: 427px;
-    left: 28%;
     text-align: center;
-    background-size: cover;
   }
 
   .sticker_text {
-    width: 160px;
     padding-top: 88px;
     font-size: 30px;
     line-height: 36px;

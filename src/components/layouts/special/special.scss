@@ -111,192 +111,67 @@
   .special {
 
     .cook-time {
-      position: relative;
-      float: right;
-      top: -552px;
-      left: -10px;
       box-shadow: none;
     }
   }
 
-  .special_hd {
-    padding: 96px 0 0 0;
-    width: 480px;
-    background: url(../img/special_header_bckgr.png) center center no-repeat;
-
-    h2 {
-      padding-top: 10px;
-      letter-spacing: 1.4px;
-    }
-  }
-
-  .ingredients-box {
-    float: left;
-    margin-top: -6px;
-    width: 25.4%;
-  }
-
   .ingredient {
-    margin-bottom: 55px;
-
     h4 {
-      margin-left: -4px;
       padding-top: 15px;
       font-size: 24px;
     }
     p {
-      width: auto;
       padding: 0 20px 14px;
-      line-height: 18px;
       font-size: 12px;
     }
   }
 
   .ingredient_img {
-    display: block;
     margin: 0 0 0 47px;
   }
 
   .recipe-preview {
-    display: block;
-    float: right;
-    width: 70%;
-    height: 680px;
-    max-width: 506px;
-    margin: 0;
+    max-width: 527px;
   }
 
   .recipe-btn {
     width: 137px;
-    height: 59px;
     top: 40px;
     left: -40px;
     font-size: 16px;
   }
 
   .recipe_img {
-    position: relative;
-    float: left;
     width: 536px;
-    height: 536px;
     top: 89px;
-    left: -30px;
-    border: 10px solid $white;
-    box-shadow: -1px 11px 13px 0 $lightShadow;
     background: url(../img/special_img.jpg) -152px -29px no-repeat;
-    background-size: auto;
-    box-sizing: content-box;
   }
 }
 
 //laptop*******************************************************************************************
 @media (min-width:1024px)and (max-width: 1259px) {
-  .special {
-
-    .cook-time {
-      position: relative;
-      float: right;
-      top: -552px;
-      left: -10px;
-      box-shadow: 0 11px 8px 0 $lightShadow;
-    }
-  }
-
-  .special_hd {
-    padding: 96px 0 0 0;
-    width: 480px;
-    background: url(../img/special_header_bckgr.png) center center no-repeat;
-
-    h2 {
-      padding-top: 10px;
-      letter-spacing: 1.4px;
-    }
-  }
-
-  .ingredients-box {
-    float: left;
-    margin-top: -6px;
-    width: 25.4%;
-  }
-
-  .ingredient {
-    margin-bottom: 55px;
-
-    h4 {
-      margin-left: -4px;
-      padding-top: 23px;
-      font-size: 29px;
-    }
-    p {
-      width: auto;
-      padding-top: 19px;
-      line-height: 20px;
-    }
-  }
 
   .ingredient_img {
-    display: block;
     margin: 0 0 0 80px;
   }
 
   .recipe-preview {
-    display: block;
-    float: right;
-    width: 70%;
-    max-width: 685px;
-    height: 680px;
-    margin: 0;
+    max-width: 705px;
   }
 
   .recipe-btn {
-    width: 171px;
-    height: 59px;
-    top: 45px;
     left: -48px;
-    font-size: 18px;
   }
 
   .recipe_img {
-    position: relative;
-    float: left;
     width: 715px;
-    height: 536px;
-    top: 87px;
-    left: -30px;
-    border: 10px solid $white;
-    box-shadow: -1px 11px 13px 0 $lightShadow;
-    background-size: auto;
-    box-sizing: content-box;
   }
 }
 
 // desktopL*****************************************************************************************
 @media (min-width: 1260px) {
-  .special {
-
-    .cook-time {
-      position: relative;
-      float: right;
-      top: -552px;
-      left: -10px;
-      box-shadow: 0 11px 8px 0 $lightShadow;
-    }
-  }
-
-  .special_hd {
-    padding: 96px 0 0 0;
-    width: 480px;
-    background: url(../img/special_header_bckgr.png) center center no-repeat;
-
-    h2 {
-      padding-top: 10px;
-      letter-spacing: 1.4px;
-    }
-  }
 
   .ingredients-box {
-    float: left;
-    margin-top: -6px;
     width: 23.4%;
   }
 
@@ -304,53 +179,120 @@
     width: 295px;
   }
 
+  .ingredient_img {
+    margin: 0 0 0 95px;
+  }
+
+  .recipe-preview {
+    max-width: 882px;
+  }
+
+  .recipe-btn {
+    left: 20px;
+  }
+
+  .recipe_img {
+    width: 820px;
+    left: 42px;
+  }
+}
+
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+  .special {
+    .cook-time {
+      float: right;
+      top: -552px;
+      left: -10px;
+    }
+  }
+
+  .special_hd {
+    padding: 96px 0 0 0;
+    width: 480px;
+    background: url(../img/special_header_bckgr.png) center center no-repeat;
+
+    h2 {
+      padding-top: 10px;
+      letter-spacing: 1.4px;
+    }
+  }
+
+  .ingredients-box {
+    float: left;
+    margin-top: -6px;
+  }
+
   .ingredient {
     margin-bottom: 55px;
 
     h4 {
       margin-left: -4px;
-      padding-top: 23px;
-      font-size: 29px;
     }
     p {
       width: auto;
-      padding-top: 19px;
-      line-height: 20px;
     }
   }
 
-  .ingredient_img {
-    display: block;
-    margin: 0 0 0 95px;
-  }
-
   .recipe-preview {
-    display: block;
     float: right;
     width: 70%;
-    max-width: 882px;
     height: 680px;
     margin: 0;
   }
 
   .recipe-btn {
-    width: 171px;
     height: 59px;
-    top: 45px;
-    left: 20px;
-    font-size: 18px;
   }
 
   .recipe_img {
     position: relative;
     float: left;
-    width: 820px;
     height: 536px;
-    top: 87px;
-    left: 42px;
-    border: 10px solid $white;
-    box-shadow: -1px 11px 13px 0 $lightShadow;
     background-size: auto;
     box-sizing: content-box;
+  }
+
+}
+
+//tablet+laptop******************************************************************************
+@media (min-width: 768px) and (max-width: 1259px) {
+  .ingredients-box {
+    width: 25.4%;
+  }
+
+  .recipe_img {
+    left: -30px;
+  }
+}
+
+//laptop+desktop*****************************************************************************
+@media (min-width:1024px) {
+  .special {
+
+    .cook-time {
+      box-shadow: 0 11px 8px 0 $lightShadow;
+    }
+  }
+
+  .ingredient {
+    h4 {
+      padding-top: 23px;
+      font-size: 29px;
+    }
+    p {
+      padding-top: 19px;
+      line-height: 20px;
+    }
+  }
+
+  .recipe-btn {
+    width: 171px;
+    top: 45px;
+    font-size: 18px;
+  }
+
+  .recipe_img {
+    top: 87px;
   }
 }

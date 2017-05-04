@@ -3,7 +3,6 @@ header {
   width: 100%;
   background: url(../img/header_bckgr.jpg) center center no-repeat;
   background-size: cover;
-  //цвет всего контента в этом блоке
   color: $white;
   border-bottom: 10px solid $white;
 }
@@ -23,10 +22,6 @@ header {
 .hd-nav {
   @extend %nav;
   margin-bottom: 10px;
-}
-
-.hd-nav_item {
-  //display: inline-block;
 }
 
 .hd-nav_separator {
@@ -110,8 +105,7 @@ header {
   margin: 0 auto 110px;
   width: 185px;
   color: $white;
-  // вывести этот цвет в переменные
-  background-color: rgba(86, 83, 76, 0.529);
+  background-color: $bthTransp;
   border-color: $grey;
   padding-left: 10px;
   font-size: 14px;
@@ -130,7 +124,6 @@ header {
   }
 }
 
-//разобраться в необходимости эрасположения стилей этого элемента (и элемента выше, вставленного с помощью :after) именно в mobile-first. Возможно, в мобильной версии этого элемента не будет вообще
 .header_border-decor {
   position: absolute;
   width: 34.74%;
@@ -144,91 +137,31 @@ header {
 @media (min-width: 768px) and (max-width: 1023px) {
   .head {
     height: 72px;
-    padding-top: 9px;
-    text-align: inherit;
-  }
-
-  .hd-logo {
-    float:left;
-    padding: 6px 0 0 1%;
-    vertical-align: bottom;
   }
 
   .hd-nav {
-    margin: 0;
-    float: right;
     width: 75%;
-    vertical-align: top;
   }
 
   .hd-nav_list {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 23px;
-  }
-
-  .hd-nav_item {
-    display: inline-block;
+    margin: 23px auto 0;
   }
 
   .hd-nav_separator {
     padding: 0 1%;
-    visibility: visible;
   }
 
   .share-box {
-    float: right;
     width: 3%;
     margin: -3px 1% 0 0;
-    text-align: right;
   }
 
   .share_item {
-    display: inline-block;
-    margin-left: 18%;
-    margin-top: 3px;
-  }
-
-  .share_item.twitter {
-    margin-left: 0;
-  }
-
-  .slogan-box {
-    background: url(../img/slogan_bckgr.png) center center no-repeat;
-  }
-
-  .slogan {
-    padding: 207px 0 65px;
-  }
-
-  .slogan_title {
-    padding: 0 0 0 8px;
-    font-size: 92px;
-    letter-spacing: 6.5px;
-
-    &::after {
-      display: block;
-      width: 197px;
-      height: 12px;
-      padding: 60px 0;
-      background: url(../img/dashed_line.png) 0 60px no-repeat;
-    }
-  }
-
-  .slogan_text {
-    width: 550px;
-    font-size: 24px;
-    line-height: 1.5;
-    letter-spacing: 2.5px;
+    margin: 3px 0 0 18%;
   }
 
   .menu_btn {
-    width: 200px;
     margin: 0 auto 135px;
-    padding-left: 10px;
-    font-size: 14px;
-    line-height: 43px;
-    letter-spacing: 4px;
 
     &::after {
       margin: 102px 0 0 48px;
@@ -244,129 +177,54 @@ header {
 
 // laptop****************************************************************************************
 @media (min-width:1024px) and (max-width: 1259px) {
-  .head {
-    height: 61px;
-    padding-top: 9px;
-    text-align: inherit;
-  }
-
-  .hd-logo {
-    float:left;
-    padding: 6px 0 0 1%;
-    vertical-align: bottom;
-  }
 
   .hd-nav {
-    margin: 0;
-    float: right;
     width: 69%;
-    vertical-align: top;
-  }
-
-  .hd-nav_list {
-    width: 100%;
-    margin-top: 19px;
-  }
-
-  .hd-nav_item {
-    display: inline-block;
-  }
-
-  .hd-nav_separator {
-    padding: 0 2.3%;
-    visibility: visible;
   }
 
   .share-box {
-    float: right;
     width: 9%;
     margin: 18px 1% 0 0;
-    text-align: right;
-  }
-
-  .share_item {
-    display: inline-block;
-    margin-left: 18%;
-  }
-
-  .share_item.twitter {
-    margin-left: 0;
-  }
-
-  .slogan-box {
-    background: url(../img/slogan_bckgr.png) center center no-repeat;
-  }
-
-  .slogan {
-    padding: 207px 0 65px;
-  }
-
-  .slogan_title {
-    padding: 0 0 0 8px;
-    font-size: 92px;
-    letter-spacing: 6.5px;
-
-    &::after {
-      display: block;
-      width: 197px;
-      height: 12px;
-      padding: 60px 0;
-      background: url(../img/dashed_line.png) 0 60px no-repeat;
-    }
-  }
-
-  .slogan_text {
-    width: 550px;
-    font-size: 24px;
-    line-height: 1.5;
-    letter-spacing: 2.5px;
-  }
-
-  .menu_btn {
-    width: 200px;
-    margin: 0 auto 215px;
-    padding-left: 10px;
-    font-size: 14px;
-    line-height: 43px;
-    letter-spacing: 4px;
-
-    &::after {
-      margin: 182px 0 0 48px;
-    }
-  }
-
-  .header_border-decor {
-    width: 10.31%;
-    top: 849px;
-    left: 44.73%;
   }
 }
 
 // desktopL***************************************************************************************
 @media (min-width: 1260px) {
+
+  .hd-logo {
+    margin: 6px 0 0 11.95%;
+    padding: 0;
+  }
+
+  .hd-nav {
+    width: 54%;
+  }
+
+  .share-box {
+    width: 8%;
+    margin: 18px 10.6% 0 0;
+  }
+}
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
   .head {
-    height: 61px;
     padding-top: 9px;
     text-align: inherit;
   }
 
   .hd-logo {
     float:left;
-    margin: 6px 0 0 11.95%;
-    padding: 0;
     vertical-align: bottom;
   }
 
   .hd-nav {
     margin: 0;
     float: right;
-    width: 54%;
     vertical-align: top;
   }
 
   .hd-nav_list {
     width: 100%;
-    margin-top: 19px;
   }
 
   .hd-nav_item {
@@ -374,20 +232,12 @@ header {
   }
 
   .hd-nav_separator {
-    padding: 0 2.3%;
     visibility: visible;
   }
 
   .share-box {
     float: right;
-    width: 8%;
-    margin: 18px 10.6% 0 0;
     text-align: right;
-  }
-
-  .share_item {
-    display: inline-block;
-    margin-left: 18%;
   }
 
   .share_item.twitter {
@@ -425,11 +275,36 @@ header {
 
   .menu_btn {
     width: 200px;
+  }
+}
+
+//tablet+laptop******************************************************************************
+@media (min-width: 768px) and (max-width: 1259px) {
+  .hd-logo {
+    padding: 6px 0 0 1%;
+  }
+}
+
+//laptop+desktop*****************************************************************************
+@media (min-width:1024px) {
+  .head {
+    height: 61px;
+  }
+
+  .hd-nav_list {
+    margin: 19px 0 0 0;
+  }
+
+  .hd-nav_separator {
+    padding: 0 2.3%;
+  }
+
+  .share_item {
+    margin: 0 0 0 18%;
+  }
+
+  .menu_btn {
     margin: 0 auto 215px;
-    padding-left: 10px;
-    font-size: 14px;
-    line-height: 43px;
-    letter-spacing: 4px;
 
     &::after {
       margin: 182px 0 0 48px;
