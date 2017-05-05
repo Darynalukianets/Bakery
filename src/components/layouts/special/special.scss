@@ -243,6 +243,11 @@
 
   .recipe-btn {
     height: 59px;
+    &:hover {
+      box-shadow: 0 11px 8px 0 $lightShadow;
+      color: $h2DarkGrey;
+
+    }
   }
 
   .recipe_img {

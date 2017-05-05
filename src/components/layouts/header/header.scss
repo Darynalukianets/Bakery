@@ -49,7 +49,7 @@ header {
 }
 
 .twitter {
-  background: url(../img/407-twitter.svg) 0 0 no-repeat
+  background: url(../img/407-twitter.svg) 0 0 no-repeat;
 }
 
 .fb {
@@ -76,7 +76,7 @@ header {
   font-family: "Playfair Display Bold";
   font-size: 42px;
   text-align: center;
-  text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.5);
+  text-shadow: 0px 1px 0px $h1HeaderTextShadow;
 
   &::after {
     display: none;
@@ -97,7 +97,7 @@ header {
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
-  text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.7);
+  text-shadow: 0px 1px 0px $h1HeaderTextShadow;
 }
 
 .menu_btn {
@@ -158,6 +158,11 @@ header {
 
   .share_item {
     margin: 3px 0 0 18%;
+    &:hover {
+      background-color: $bthTransp;
+      box-shadow: 0px 0px 20px 5px $bthTransp;
+      margin-right: 5px;
+    }
   }
 
   .menu_btn {
@@ -229,6 +234,13 @@ header {
 
   .hd-nav_item {
     display: inline-block;
+
+    &:hover {
+      background-color: $bthTransp;
+      border-radius: 5px;
+      box-shadow: 0px 0px 20px 5px $bthTransp;
+      text-shadow: 0 1px 0 $h1HeaderTextShadow;
+    }
   }
 
   .hd-nav_separator {
@@ -275,6 +287,11 @@ header {
 
   .menu_btn {
     width: 200px;
+    &:hover {
+      background-color: $bthTranspHover;
+      color: $graphiteGrey;
+      border: 1px dashed $prepIconsUnitsGrey;
+    }
   }
 }
 
@@ -301,6 +318,12 @@ header {
 
   .share_item {
     margin: 0 0 0 18%;
+
+    &:hover {
+      background-color: $bthTransp;
+      box-shadow: 0px 0px 20px 5px $bthTransp;
+      vertical-align: middle;
+    }
   }
 
   .menu_btn {

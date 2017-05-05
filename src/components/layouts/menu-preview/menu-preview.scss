@@ -91,7 +91,7 @@
 
 .right-btn {
   float: right;
-  background: url(../img/sprite.png) -129px -2px no-repeat;
+  background: url(../img/sprite.png) -128px -2px no-repeat;
 }
 
 .slider_hider {
@@ -148,6 +148,10 @@
   margin: 0 5px;
   border: 1px solid $navElemsSepia;
   border-radius: 5px;
+  &:hover {
+    border: 1px solid $h2DarkGrey;
+    background-color: $h2DarkGrey;
+  }
 }
 
 .inactive {
@@ -388,6 +392,9 @@
 
   .slider_btn {
     display: block;
+    &:hover {
+      margin-top: 30px;
+    }
   }
 
   .slider_nav {
