@@ -6,7 +6,7 @@
   .cook-time {
     position: relative;
     top: 30px;
-    left: 67%;
+    left: 1%;
     z-index: 1;
   }
 
@@ -19,7 +19,7 @@
   padding-bottom: 50px;
 }
 
-.menu-preview_widget {
+.widget-box {
   background-color: $white;
   display: block;
   max-width: 400px;
@@ -38,6 +38,10 @@
   background: url(../img/menu_preview_watermark.png) 175px 168px no-repeat;
   background-size: auto 250px;
   text-align: center;
+}
+
+.widget_content-box {
+  height: 276px;
 }
 
 .widget-hd {
@@ -59,11 +63,11 @@
   height: 15px;
 }
 
-.checked-star {
+#checked-star {
   background: url(../img/sprite.png) -125px -69px no-repeat;
 }
 
-.unchecked-star {
+#unchecked-star {
   background: url(../img/sprite.png) -139px -69px no-repeat;
 }
 
@@ -78,10 +82,11 @@
 }
 
 .slider_btn {
-  display: none;
+  display: block;
   width: 34px;
   height: 34px;
-  margin-top: 28px;
+  //margin-top: 28px;
+  margin: 28px 3px 0;
 }
 
 .left-btn {
@@ -104,7 +109,7 @@
   position: relative;
   @include clearfix;
   // позиционирование с учетом нажатого первого элемента слайдера и прокрученого влево. Должно быть выставлено в ноль и прокручиваться через js
-  left: -122px;
+  left: 0;
 }
 
 .slider_item {
@@ -112,7 +117,7 @@
   float: left;
   width: 90px;
   height: 90px;
-  margin: 0 15px;
+  margin: 0 15px 15px;
   overflow: hidden;
   border-radius: 45px;
 }
@@ -134,7 +139,7 @@
 }
 
 .slider_nav {
-  display: block;
+  display: none;
   margin: 15px auto;
   width: 84px;
   @include clearfix;
@@ -168,8 +173,13 @@
     }
   }
 
-  .menu-preview_widget {
+  .widget-box {
     left: 32px;
+  }
+
+  .menu-preview_widget {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 8.5% 100%, 0 89%);
   }
 
   .widget_cover {
@@ -220,8 +230,13 @@
     }
   }
 
-  .menu-preview_widget {
+  .widget-box {
     left: 62px;
+  }
+
+  .menu-preview_widget {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 7% 100%, 0 89%);
   }
 
   .widget_cover {
@@ -266,8 +281,13 @@
     }
   }
 
-  .menu-preview_widget {
+  .widget-box {
     left: 95px;
+  }
+
+  .menu-preview_widget {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5.5% 100%, 0 89%);
   }
 
   .widget_cover {
@@ -319,7 +339,7 @@
     @include clearfix;
   }
 
-  .menu-preview_widget {
+  .widget-box {
     position: relative;
     max-width: 970px;
     height: 512px;
@@ -327,22 +347,26 @@
     top: 140px;
     margin: 0;
     @include clearfix;
-    border-bottom-left-radius: 90px;
+    border-bottom-left-radius: 96px;
+  }
+
+  .menu-preview_widget {
+    position: relative;
+    height: 512px;
+    background-color: $white;
   }
 
   .widget_cover {
     display: inline-block;
     height: 512px;
-    // свойство с бэкграундом должно быть завязано на кликнутый элемент в слайдере и передаваться в это свойство
-    background: url(../img/menu_slider_item1.jpg) -329px -1px no-repeat;
 
     &::before {
       content:"";
       position: absolute;
-      top: 461px;
+      top: 458px;
       left: 0px;
       border-style: solid;
-      border-width: 50px 0 0 50px;
+      border-width: 55px 0 0 55px;
       border-top-color: $white;
       border-right-color: $white;
       border-bottom-color: $white;
@@ -386,14 +410,22 @@
 
   .widget_slider {
     position: relative;
-    top: 231px;
+    top: 220px;
     margin: 0;
   }
 
   .slider_btn {
-    display: block;
+    margin: 28px 0 0 0;
     &:hover {
-      margin-top: 30px;
+      margin: 30px 0 0 0;
+      cursor: pointer;
+    }
+  }
+
+  .slider_item {
+    &:hover {
+      box-shadow: 0 8px 8px 0 $lightShadow;
+      cursor: pointer;
     }
   }
 
