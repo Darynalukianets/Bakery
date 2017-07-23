@@ -153,3 +153,5 @@ prev.onclick = function() {
 };
 
 listElems.forEach(addEvent);
+
+//var leftPosition = parseInt(el.style.left) использовать в нужном месте parseInt для того, чтобы отсечь px от значения

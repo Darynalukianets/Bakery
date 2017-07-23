@@ -24,17 +24,44 @@
     </div>
     <!-- в идеале этот блок должен состоять из троих разных элементов (см. шаблон), которые находяться друг под другом и имеют разные стили (шрифты и контент тот же, но размер, размеры шрифтов и отступы изменены). Додумать смысловую нагрузку и js-анимацию для переключения между этими тремя элементами (при каком действии на какой части элемента происходит замена, как элементы позиционируются и прелистываются) -->
     <div class="col-50-right">
-      <div class="breakfast-cover_box">
-        <div class="breakfast-cover">
-          <div class="cover-hd">
-            <span>est.</span>
-            <span>1893</span>
-            <div class="cover_decor"></div>
+      <div class="breakfast-covers_container  clearfix" id="cover-container">
+        <div class="breakfast-cover_box cover-sizeL" id="front-cover">
+          <div class="breakfast-cover light">
+            <div class="cover-hd">
+              <span>est.</span>
+              <span>1893</span>
+              <div class="cover_decor"></div>
+            </div>
+            <h3 class="section-hd">Your morning Escape with Flair</h3>
+            <p class="para-lato">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+              faucibus tincidunt. Duis leo.</p>
+            <a href="">read</a>
           </div>
-          <h3 class="section-hd">Your morning Escape with Flair</h3>
-          <p class="para-lato">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
-   faucibus tincidunt. Duis leo.</p>
-          <a href="">read</a>
+        </div>
+        <div class="breakfast-cover_box cover-sizeM">
+          <div class="breakfast-cover medium">
+            <div class="cover-hd">
+              <span>est.</span>
+              <span>1893</span>
+              <div class="cover_decor"></div>
+            </div>
+            <h3 class="section-hd">Your morning Escape with Flair</h3>
+            <p class="para-lato">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+            <a href="">read</a>
+          </div>
+        </div>
+        <div class="breakfast-cover_box cover-sizeS">
+          <div class="breakfast-cover dark">
+            <div class="cover-hd">
+              <span>est.</span>
+              <span>1893</span>
+              <div class="cover_decor"></div>
+            </div>
+            <h3 class="section-hd">Your morning Escape with Flair</h3>
+            <p class="para-lato">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+                faucibus tincidunt. Duis leo.</p>
+            <a href="">read</a>
+          </div>
         </div>
       </div>
     </div>
