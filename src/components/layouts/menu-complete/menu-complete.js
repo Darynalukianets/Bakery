@@ -9,21 +9,20 @@
         frontCover.addEventListener('click', clickSlide, false);
 
         function clickSlide() {
-            nextSizeL = coversContainer.querySelector('.cover-sizeM');
+            var nextSizeL = coversContainer.querySelector('.cover-sizeM');
 
             nextSizeL.className = "breakfast-cover_box cover-sizeL";
             nextSizeL.id = "front-cover";
 
-            nextSizeM = coversContainer.querySelector('.cover-sizeS');
+            var nextSizeM = coversContainer.querySelector('.cover-sizeS');
             nextSizeM.className = "breakfast-cover_box cover-sizeM";
 
             frontCover.id = "";
             frontCover.className = "breakfast-cover_box cover-sizeS";
             frontCover = coversContainer.querySelector('#front-cover');
             frontCover.addEventListener('click', clickSlide, false);
-        };
-    };
+        }
+    }
 
     coverSlide ();
-
 })();
