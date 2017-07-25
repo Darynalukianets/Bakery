@@ -1,0 +1,123 @@
+.footer {
+  padding-bottom: 50px;
+}
+
+.ft-nav {
+  @extend %nav;
+  width: 96%;
+  margin: 0 auto;
+
+  border-top: 1px solid $lightGrey;
+  border-bottom: 1px solid $lightGrey;
+  background-color: $ftNavBckgr;
+  box-shadow: inset 0px 0px 17px 11px $bodyBckgrColor;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.ft-nav_item {
+  display: inline-block;
+
+  a {
+    line-height: 37px;
+  }
+}
+
+.ft-nav_separator {
+  @extend %nav-separator;
+  padding: 0 2.5%;
+}
+
+.ft-logo {
+  @extend %logo;
+  color: $h2DarkGrey;
+  padding: 0 0 16px 0;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+// tablet******************************************************************************************
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .ft-nav {
+    width: 37.9%;
+  }
+
+  .ft-nav_separator {
+    padding: 0;
+  }
+
+  .ft-logo {
+    padding: 74px 0 16px 12px;
+    font-size: 28px;
+  }
+}
+
+// laptop******************************************************************************************
+@media (min-width:1024px) and (max-width: 1259px) {
+
+  .ft-nav {
+    width: 37.3%;
+  }
+
+  .ft-nav_separator {
+    padding: 0 3%;
+  }
+
+  .ft-logo {
+    padding: 82px 0 21px 62px;
+  }
+}
+
+// desktopL*****************************************************************************************
+@media (min-width: 1260px) {
+
+  .ft-nav {
+    width: 39.5%;
+  }
+
+  .ft-nav_separator {
+    padding: 0 6.1%;
+  }
+
+  .ft-logo {
+    padding: 82px 0 21px 62px;
+  }
+}
+
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 70px;
+  }
+
+  .ft-nav {
+    //display: inline-block;
+    display: block;
+    margin: 59px 0 0 0;
+  }
+
+  .ft-nav.left {
+    float: left;
+  }
+
+  .ft-nav.right {
+    float: right;
+  }
+
+  .ft-nav_item {
+    a {
+      line-height: 69px;
+      &:hover {
+        background-color: $lightShadow;
+        box-shadow: 0px 0px 20px 5px $lightShadow;
+      }
+    }
+  }
+
+  .ft-logo {
+    display: inline-block;
+  }
+}
+

@@ -1,0 +1,342 @@
+
+header {
+  width: 100%;
+  background: url(../img/header_bckgr.jpg) center center no-repeat;
+  background-size: cover;
+  color: $white;
+  border-bottom: 10px solid $white;
+}
+
+.head {
+  width: 100%;
+  background-color: rgba(86, 83, 76, 0.5);
+  @include clearfix;
+  text-align: center;
+}
+
+.hd-logo {
+  @extend %logo;
+  padding: 6px 0;
+}
+
+.hd-nav {
+  @extend %nav;
+  margin-bottom: 10px;
+}
+
+.hd-nav_separator {
+  @extend %nav-separator;
+  visibility: hidden;
+}
+
+.share-box {
+  margin: 18px 0 15px;
+  width: 100%;
+}
+
+.share_list {
+  width: 100%;
+}
+
+.share_item {
+  display: inline-block;
+}
+
+.share_link {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+.twitter {
+  background: url(../img/407-twitter.svg) 0 0 no-repeat;
+}
+
+.fb {
+  background: url(../img/401-facebook.svg) 0 0 no-repeat;
+}
+
+.insta {
+  background: url(../img/403-instagram.svg) 0 0 no-repeat;
+}
+
+.slogan-box {
+  text-align: center;
+  background: url(../img/slogan_bckgr.png) center -90px no-repeat;
+  background-size: cover;
+}
+
+.slogan {
+  width: 100%;
+  padding: 45px 0;
+}
+
+.slogan_title {
+  padding: 0 0 8px 0;
+  font-family: "Playfair Display Bold";
+  font-size: 42px;
+  text-align: center;
+  text-shadow: 0px 1px 0px $h1HeaderTextShadow;
+
+  &::after {
+    display: none;
+    content: " ";
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    padding: 10px 0;
+    background: url(../img/dashed_line.png) center center no-repeat;
+    background-size: contain;
+  }
+}
+
+.slogan_text {
+  width: 300px;
+  margin: 0 auto;
+  font-family: "Lato Light";
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  text-shadow: 0px 1px 0px $h1HeaderTextShadow;
+}
+
+.menu_btn {
+  @extend %dashed-btn;
+  margin: 0 auto 110px;
+  width: 185px;
+  color: $white;
+  background-color: $bthTransp;
+  border-color: $grey;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 43px;
+  letter-spacing: 4px;
+
+  &::after {
+    display: block;
+    content: " ";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: 75px 42px 0;
+    border-radius: 40px;
+    background-color: $white;
+  }
+}
+
+.header_border-decor {
+  position: absolute;
+  width: 34.74%;
+  height: 110px;
+  background: url(../img/header_border.png) center center no-repeat;
+  top: 508px;
+  left: 33%;
+}
+
+// tablet ***************************************************************************************
+@media (min-width: 768px) and (max-width: 1023px) {
+  .head {
+    height: 72px;
+  }
+
+  .hd-nav {
+    width: 75%;
+  }
+
+  .hd-nav_list {
+    margin: 23px auto 0;
+  }
+
+  .hd-nav_separator {
+    padding: 0 1%;
+  }
+
+  .share-box {
+    width: 3%;
+    margin: -3px 1% 0 0;
+  }
+
+  .share_item {
+    margin: 3px 0 0 18%;
+    &:hover {
+      background-color: $bthTransp;
+      box-shadow: 0px 0px 20px 5px $bthTransp;
+      margin-right: 5px;
+    }
+  }
+
+  .menu_btn {
+    margin: 0 auto 135px;
+
+    &::after {
+      margin: 102px 0 0 48px;
+    }
+  }
+
+  .header_border-decor {
+    width: 13.9%;
+    top: 872px;
+    left: 43%;
+  }
+}
+
+// laptop****************************************************************************************
+@media (min-width:1024px) and (max-width: 1259px) {
+
+  .hd-nav {
+    width: 69%;
+  }
+
+  .share-box {
+    width: 9%;
+    margin: 18px 1% 0 0;
+  }
+}
+
+// desktopL***************************************************************************************
+@media (min-width: 1260px) {
+
+  .hd-logo {
+    margin: 6px 0 0 11.95%;
+    padding: 0;
+  }
+
+  .hd-nav {
+    width: 54%;
+  }
+
+  .share-box {
+    width: 8%;
+    margin: 18px 10.6% 0 0;
+  }
+}
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+  .head {
+    padding-top: 9px;
+    text-align: inherit;
+  }
+
+  .hd-logo {
+    float:left;
+    vertical-align: bottom;
+  }
+
+  .hd-nav {
+    margin: 0;
+    float: right;
+    vertical-align: top;
+  }
+
+  .hd-nav_list {
+    width: 100%;
+  }
+
+  .hd-nav_item {
+    display: inline-block;
+
+    &:hover {
+      background-color: $bthTransp;
+      border-radius: 5px;
+      box-shadow: 0px 0px 20px 5px $bthTransp;
+      text-shadow: 0 1px 0 $h1HeaderTextShadow;
+    }
+  }
+
+  .hd-nav_separator {
+    visibility: visible;
+  }
+
+  .share-box {
+    float: right;
+    text-align: right;
+  }
+
+  .share_item.twitter {
+    margin-left: 0;
+  }
+
+  .slogan-box {
+    background: url(../img/slogan_bckgr.png) center center no-repeat;
+  }
+
+  .slogan {
+    padding: 207px 0 65px;
+  }
+
+  .slogan_title {
+    padding: 0 0 0 8px;
+    font-size: 92px;
+    letter-spacing: 6.5px;
+
+    &::after {
+      display: block;
+      width: 197px;
+      height: 12px;
+      padding: 60px 0;
+      background: url(../img/dashed_line.png) 0 60px no-repeat;
+    }
+  }
+
+  .slogan_text {
+    width: 550px;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 2.5px;
+  }
+
+  .menu_btn {
+    width: 200px;
+    &:hover {
+      background-color: $bthTranspHover;
+      color: $graphiteGrey;
+      border: 1px dashed $prepIconsUnitsGrey;
+    }
+  }
+}
+
+//tablet+laptop******************************************************************************
+@media (min-width: 768px) and (max-width: 1259px) {
+  .hd-logo {
+    padding: 6px 0 0 1%;
+  }
+}
+
+//laptop+desktop*****************************************************************************
+@media (min-width:1024px) {
+  .head {
+    height: 61px;
+  }
+
+  .hd-nav_list {
+    margin: 19px 0 0 0;
+  }
+
+  .hd-nav_separator {
+    padding: 0 2.3%;
+  }
+
+  .share_item {
+    margin: 0 0 0 18%;
+
+    &:hover {
+      background-color: $bthTransp;
+      box-shadow: 0px 0px 20px 5px $bthTransp;
+      vertical-align: middle;
+    }
+  }
+
+  .menu_btn {
+    margin: 0 auto 215px;
+
+    &::after {
+      margin: 182px 0 0 48px;
+    }
+  }
+
+  .header_border-decor {
+    width: 10.31%;
+    top: 849px;
+    left: 44.73%;
+  }
+}

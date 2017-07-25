@@ -1,0 +1,33 @@
+%logo {
+  font-family: "Scriptina Regular";
+  letter-spacing: 9px;
+  font-size: 30px;
+  text-transform: none;
+}
+
+%nav {
+  font-family: "Alegreya Regular";
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+%nav-separator {
+  display: inline-block;
+  width: 7px;
+}
+
+%dashed-btn {
+  border-width: 1px;
+  border-style: dashed;
+  font-family: "Alegreya Bold";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+%cook-time-item {
+  box-sizing: border-box;
+  margin: 1px 2px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}

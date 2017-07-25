@@ -1,0 +1,109 @@
+@import "colors.scss";
+
+.page-container {
+  overflow: hidden;
+}
+
+.content-wrapper {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.col-50-left, .col-50-right {
+  width: 100%;
+}
+
+.section-hd {
+  font-family: "Alegreya Bold";
+  color: $h2DarkGrey;
+  font-size: 36px;
+}
+
+.section-sub-hd {
+  font-family: "Alegreya Bold";
+  color: $h3Brown;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+
+//means paragraph with 'Lato Regular' font-family
+.para-lato {
+  font-family: "Lato Regular";
+  color: $h2DarkGrey;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+//tablet******************************************************************
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-wrapper {
+    max-width: 768px;
+  }
+
+  .section-hd {
+    font-size: 45px;
+  }
+}
+
+//laptop******************************************************************
+@media (min-width: 1024px) and (max-width: 1259px) {
+  .page-container {
+    max-width: 1259px;
+  }
+
+  .content-wrapper {
+    max-width: 1024px;
+  }
+}
+
+//desktopL******************************************************************
+@media (min-width: 1260px) {
+  .page-container {
+    max-width: 1600px;
+  }
+
+  .content-wrapper {
+    max-width: 1260px;
+  }
+}
+
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+  .page-container {
+    margin: 0 auto;
+  }
+
+  .col-50-left {
+    width: 50%;
+    display: block;
+    float: left;
+  }
+
+  .col-50-right {
+    width: 50%;
+    display: block;
+    float: right;
+  }
+
+  .section-hd {
+    letter-spacing: 1px;
+  }
+}
+
+//laptop+desktop*****************************************************************************
+@media (min-width:1024px) {
+  .section-hd {
+    font-size: 48px;
+  }
+
+  .section-sub-hd {
+    font-size: 14px;
+  }
+
+  .para-lato {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,144 @@
+.cook-time {
+  display: block;
+  width: 312px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.cook-time-hd {
+  font-family: 'Alegreya Bold';
+  text-transform: uppercase;
+  color: $h3Brown;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  line-height: 15px;
+}
+
+.cook-time-amount {
+  font-family: 'Alegreya Bold';
+  color: $h2DarkGrey;
+  display: block;
+  font-size: 60px;
+  letter-spacing: 6px;
+  padding: 0;
+}
+
+.cook-time-units {
+  font-family: 'Alegreya Bold';
+  color: $eggShell;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-left: 4px;
+}
+
+.prep, .cook {
+  @extend %cook-time-item;
+  display: inline-block;
+  width: 100px;
+  padding: 5px 0 4px;
+
+}
+
+.ready-in {
+  display: inline-block;
+  width: 100px;
+  margin: 0 2px;
+  padding: 5px 0 4px;
+  background: url(..//img/ready_in_bckgr.png) center center no-repeat;
+  text-align: center;
+}
+
+.ready-in_amount {
+  font-family: 'Alegreya Bold';
+  color: $iconsHazelLight;
+  display: block;
+  font-size: 60px;
+  letter-spacing: 6px;
+  padding: 0;
+}
+
+// tablet****************************************************************
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cook-time {
+    width: 150px;
+  }
+
+  .cook-time-hd {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+
+  .cook-time-units {
+    font-size: 15px;
+  }
+
+  .prep, .cook {
+    width: 150px;
+    padding: 20px 0 19px;
+  }
+
+  .ready-in {
+    width: 150px;
+    padding: 15px 0 14px;
+  }
+
+  .ready-in_amount {
+    font-size: 86px;
+    padding: 0 0 13px;
+  }
+}
+//laptop+desktop
+@media (min-width: 1024px) {
+  .cook-time {
+    width: 200px;
+  }
+
+  .cook-time-hd {
+    font-size: 18px;
+    letter-spacing: 1.9px;
+  }
+
+  .cook-time-units {
+    font-size: 17px;
+  }
+
+  .prep, .cook {
+    width: 200px;
+    padding: 48px 0 46px;
+  }
+
+  .ready-in {
+    width: 200px;
+    padding: 33px 0 30px;
+  }
+
+  .ready-in_amount {
+    font-size: 92px;
+    padding: 13px 0 0 13px;
+  }
+}
+
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+
+  .cook-time {
+    margin: 0;
+  }
+
+  .cook-time-amount {
+    padding: 8px 0 6px 7px;
+  }
+
+  .cook-time-units {
+    letter-spacing: 2.5px;
+  }
+
+  .prep, .cook, .ready-in {
+    display: block;
+  }
+
+  .ready-in_amount {
+    letter-spacing: 10px;
+  }
+}

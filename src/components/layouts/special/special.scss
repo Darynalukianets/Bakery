@@ -1,0 +1,303 @@
+.special {
+  @include clearfix;
+
+  .cook-time {
+    position: relative;
+    top: -70px;
+  }
+}
+
+.special_hd {
+  display: block;
+  margin: 0 auto;
+  background: url(../img/special_header_bckgr.png) center 5px no-repeat;
+  padding: 70px 0 20px;
+
+  h1 {
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+
+  h2 {
+    padding-top: 6px;
+    letter-spacing: 1px;
+  }
+}
+
+.ingredients-box {
+  display: block;
+}
+
+.ingredients {
+  width: 100%;
+}
+
+.ingredient {
+  display: block;
+  margin-bottom: 25px;
+
+  h4 {
+    font-family: 'Alegreya Bold';
+    color: $h3Brown;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 21px;
+    letter-spacing: 1.2px;
+  }
+  p {
+    width: 300px;
+    margin: 0 auto;
+    letter-spacing: 1.4px;
+    line-height: 18px;
+  }
+}
+
+.ingredient_img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: 0 14px 13px -2px $lightShadow;
+}
+
+.wheat {
+  background: url(../img/ingredient_img1.jpg) -108px -23px no-repeat;
+}
+
+.egg {
+  background: url(../img/ingredient_img2.jpg) -23px -8px no-repeat;
+}
+
+.ricotta {
+  background: url(../img/ingredient_img3.jpg) -31px -3px no-repeat;
+}
+
+.recipe-preview {
+  display: block;
+  width: 100%;
+  max-width: 470px;
+  margin: 50px auto 0;
+}
+
+.recipe-btn {
+  @extend %dashed-btn;
+  border-color: $iconsHazelLight;
+  color: $iconsHazelLight;
+  background-color: $white;
+  display: block;
+  width: 121px;
+  height: 40px;
+  position: relative;
+  top: -314px;
+  left: 14px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.recipe_img {
+  background: url(../img/special_img.jpg) -14px -29px no-repeat;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  border: 10px solid $white;
+  box-shadow: -1px 11px 13px 0 $lightShadow;
+  background-size: auto 330px;
+}
+
+
+
+// tablet*******************************************************************************************
+@media (min-width: 767px) and (max-width: 1023px) {
+  .special {
+
+    .cook-time {
+      box-shadow: none;
+    }
+  }
+
+  .ingredient {
+    h4 {
+      padding-top: 15px;
+      font-size: 24px;
+    }
+    p {
+      padding: 0 20px 14px;
+      font-size: 12px;
+    }
+  }
+
+  .ingredient_img {
+    margin: 0 0 0 47px;
+  }
+
+  .recipe-preview {
+    max-width: 527px;
+  }
+
+  .recipe-btn {
+    width: 137px;
+    top: 40px;
+    left: -40px;
+    font-size: 16px;
+  }
+
+  .recipe_img {
+    width: 536px;
+    top: 89px;
+    background: url(../img/special_img.jpg) -152px -29px no-repeat;
+  }
+}
+
+//laptop*******************************************************************************************
+@media (min-width:1024px)and (max-width: 1259px) {
+
+  .ingredient_img {
+    margin: 0 0 0 80px;
+  }
+
+  .recipe-preview {
+    max-width: 705px;
+  }
+
+  .recipe-btn {
+    left: -48px;
+  }
+
+  .recipe_img {
+    width: 715px;
+  }
+}
+
+// desktopL*****************************************************************************************
+@media (min-width: 1260px) {
+
+  .ingredients-box {
+    width: 23.4%;
+  }
+
+  .ingredients {
+    width: 295px;
+  }
+
+  .ingredient_img {
+    margin: 0 0 0 95px;
+  }
+
+  .recipe-preview {
+    max-width: 882px;
+  }
+
+  .recipe-btn {
+    left: 20px;
+  }
+
+  .recipe_img {
+    width: 820px;
+    left: 42px;
+  }
+}
+
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+  .special {
+    .cook-time {
+      float: right;
+      top: -552px;
+      left: -10px;
+    }
+  }
+
+  .special_hd {
+    padding: 96px 0 0 0;
+    width: 480px;
+    background: url(../img/special_header_bckgr.png) center center no-repeat;
+
+    h2 {
+      padding-top: 10px;
+      letter-spacing: 1.4px;
+    }
+  }
+
+  .ingredients-box {
+    float: left;
+    margin-top: -6px;
+  }
+
+  .ingredient {
+    margin-bottom: 55px;
+
+    h4 {
+      margin-left: -4px;
+    }
+    p {
+      width: auto;
+    }
+  }
+
+  .recipe-preview {
+    float: right;
+    width: 70%;
+    height: 680px;
+    margin: 0;
+  }
+
+  .recipe-btn {
+    height: 59px;
+    &:hover {
+      box-shadow: 0 11px 8px 0 $lightShadow;
+      color: $h2DarkGrey;
+
+    }
+  }
+
+  .recipe_img {
+    position: relative;
+    float: left;
+    height: 536px;
+    background-size: auto;
+    box-sizing: content-box;
+  }
+
+}
+
+//tablet+laptop******************************************************************************
+@media (min-width: 768px) and (max-width: 1259px) {
+  .ingredients-box {
+    width: 25.4%;
+  }
+
+  .recipe_img {
+    left: -30px;
+  }
+}
+
+//laptop+desktop*****************************************************************************
+@media (min-width:1024px) {
+  .special {
+
+    .cook-time {
+      box-shadow: 0 11px 8px 0 $lightShadow;
+    }
+  }
+
+  .ingredient {
+    h4 {
+      padding-top: 23px;
+      font-size: 29px;
+    }
+    p {
+      padding-top: 19px;
+      line-height: 20px;
+    }
+  }
+
+  .recipe-btn {
+    width: 171px;
+    top: 45px;
+    font-size: 18px;
+  }
+
+  .recipe_img {
+    top: 87px;
+  }
+}

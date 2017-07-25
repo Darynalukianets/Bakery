@@ -1,0 +1,771 @@
+.menu-category {
+  background: url(../img/menu_complete_bckgr.jpg) center center no-repeat;
+  max-width: 767px;
+  background-size: auto 1255px;
+  padding-bottom: 50px;
+}
+
+.breakfast {
+  display: block;
+  padding: 50px 0 0;
+}
+
+.breakfast_title {
+  font-family: 'Alegreya Bold';
+  color: $white;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.breakfast-sub-hd {
+  color: $h3SepiaDark;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.breakfast_item {
+  display: block;
+  text-align: center;
+  margin-bottom: 27px;
+
+  h4 {
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    color: $lightGrey;
+    line-height: 28px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  span {
+    font-family: 'Alegreya Regular';
+    color: $iconsHazelLight;
+    font-size: 27px;
+    letter-spacing: 2px;
+    line-height: 42px;
+  }
+}
+
+.breakfast-covers_container {
+  height: 484px;
+}
+
+.light {
+  //.breakfast-cover {
+    background-color: $bodyBckgrColor;
+  //}
+}
+
+.medium {
+  //.breakfast-cover {
+    background-color: $medCover;
+  //}
+}
+
+.dark {
+  //.breakfast-cover {
+    background-color: $darkCover;
+  //}
+}
+
+.breakfast-cover_box.cover-sizeL {
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  z-index: 3;
+  box-shadow: 11px 11px 29px -5px rgba(0, 0, 0, 0.5);
+
+  .breakfast-cover {
+    width: 100%;
+    position: relative;
+    outline: 2px dashed $grey; /* Пунктирная рамка */
+    outline-offset: -10px;
+    padding-bottom: 1px;
+
+    &::before {
+      content:"";
+      position: absolute;
+      border-style: solid;
+      border-top-color: $white;
+      border-right-color: $white;
+      border-bottom-color: $white;
+      border-left-color: transparent;
+    }
+
+    .cover-hd {
+      display: block;
+      text-align: center;
+      padding-top: 49px;
+
+      span {
+        display: inline-block;
+        font-family: 'Alegreya Bold';
+        text-transform: uppercase;
+        color: $h2DarkGrey;
+        margin: 0 64px;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+
+      .cover_decor {
+        background: url(../img/menu-cover_head_img.png) center center no-repeat;
+        width: 80%;
+        height: 60px;
+        margin: 0 auto;
+        background-size: contain;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin: 25px 13% 20px;
+      font-size: 33px;
+      line-height: 43px;
+    }
+
+    p {
+      margin: 0 27px;
+      letter-spacing: 0.7px;
+      line-height: 24px;
+    }
+    a {
+      display: block;
+      font-family: 'Alegreya Bold';
+      color: $h3Brown;
+      text-align: center;
+      border: 1px solid $grey;
+      text-transform: uppercase;
+      width: 164px;
+      margin: 44px auto 49px;
+      padding: 10px 0;
+      font-size: 16px;
+    }
+  }
+}
+
+.breakfast-cover_box.cover-sizeM {
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  right: 22.6%;
+  z-index: 2;
+  box-shadow: 11px 11px 29px -5px rgba(0, 0, 0, 0.5);
+
+  .breakfast-cover {
+    width: 100%;
+    position: relative;
+    outline: 2px dashed $grey; /* Пунктирная рамка */
+    outline-offset: -10px;
+    padding-bottom: 1px;
+
+    &::before {
+      content:"";
+      position: absolute;
+      border-style: solid;
+      border-top-color: $white;
+      border-right-color: $white;
+      border-bottom-color: $white;
+      border-left-color: transparent;
+    }
+
+    .cover-hd {
+      display: block;
+      text-align: center;
+      padding-top: 49px;
+
+      span {
+        display: inline-block;
+        font-family: 'Alegreya Bold';
+        text-transform: uppercase;
+        color: $h2DarkGrey;
+        margin: 0 64px;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+
+      .cover_decor {
+        background: url(../img/menu-cover_head_img_grapes.png) center center no-repeat;
+        width: 80%;
+        height: 60px;
+        margin: 0 auto;
+        background-size: contain;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin: 25px 13% 20px;
+      font-size: 33px;
+      line-height: 43px;
+    }
+
+    p {
+      margin: 0 27px;
+      letter-spacing: 0.7px;
+      line-height: 24px;
+    }
+    a {
+      display: block;
+      font-family: 'Alegreya Bold';
+      color: $h3Brown;
+      text-align: center;
+      border: 1px solid $grey;
+      text-transform: uppercase;
+      width: 164px;
+      margin: 44px auto 49px;
+      padding: 10px 0;
+      font-size: 16px;
+    }
+  }
+}
+
+.breakfast-cover_box.cover-sizeS {
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  right: 0;
+  box-shadow: 11px 11px 29px -5px rgba(0, 0, 0, 0.5);
+
+  .breakfast-cover {
+    width: 100%;
+    outline: 2px dashed $grey; /* Пунктирная рамка */
+    outline-offset: -10px;
+    padding-bottom: 1px;
+
+    &::before {
+      content:"";
+      position: absolute;
+      border-style: solid;
+      border-top-color: $white;
+      border-right-color: $white;
+      border-bottom-color: $white;
+      border-left-color: transparent;
+    }
+
+    .cover-hd {
+      display: block;
+      text-align: center;
+      padding-top: 49px;
+
+      span {
+        display: inline-block;
+        font-family: 'Alegreya Bold';
+        text-transform: uppercase;
+        color: $h2DarkGrey;
+        margin: 0 64px;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+
+      .cover_decor {
+        background: url(../img/menu-cover_head_img_grapes.png) center center no-repeat;
+        width: 80%;
+        height: 60px;
+        margin: 0 auto;
+        background-size: contain;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin: 25px 13% 20px;
+      font-size: 33px;
+      line-height: 43px;
+    }
+
+    p {
+      margin: 0 27px;
+      letter-spacing: 0.7px;
+      line-height: 24px;
+    }
+    a {
+      display: block;
+      font-family: 'Alegreya Bold';
+      color: $h3Brown;
+      text-align: center;
+      border: 1px solid $grey;
+      text-transform: uppercase;
+      width: 164px;
+      margin: 44px auto 49px;
+      padding: 10px 0;
+      font-size: 16px;
+    }
+  }
+}
+
+// tablet*******************************************************************************************
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu-category {
+    max-width: 1023px;
+  }
+
+  .breakfast {
+    padding: 85px 0 41px 5%;
+  }
+
+  .breakfast_title {
+    font-size: 55px;
+  }
+
+  .breakfast-sub-hd {
+    font-size: 16px;
+  }
+
+  .breakfast_item {
+
+    h4 {
+      font-size: 28px;
+    }
+    span {
+      font-size: 32px;
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeL {
+    width: 360px;
+    height: 585px;
+
+    .breakfast-cover {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 95%);
+      height: 585px;
+
+      &::before {
+        top: 554px;
+        box-shadow: -13px 19px 19px 3px rgba(0, 0, 0, 0.87);
+      }
+
+      .cover-hd {
+        span {
+          margin: 0 73px;
+        }
+      }
+
+      h3 {
+        font-size: 37px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeM {
+    width: 360px;
+    height: 535px;
+
+    .breakfast-cover {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 95%);
+      height: 535px;
+
+      &::before {
+        top: 506px;
+        border-width: 30px 0 0 30px;
+        box-shadow: -13px 19px 19px 3px rgba(0, 0, 0, 0.87);
+      }
+
+      .cover-hd {
+        span {
+          margin: 0 73px;
+        }
+      }
+
+      h3 {
+        font-size: 37px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeS {
+    width: 360px;
+    height: 490px;
+
+    .breakfast-cover {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 94%);
+      height: 490px;
+
+      &::before {
+        top: 459px;
+        border-width: 35px 0  0 29px;
+        box-shadow: -13px 19px 19px 3px rgba(0, 0, 0, 0.87);
+      }
+
+      .cover-hd {
+        span {
+          margin: 0 73px;
+        }
+      }
+
+      h3 {
+        font-size: 37px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+// laptop*******************************************************************************************
+
+@media (min-width:1024px) and (max-width: 1259px) {
+  .menu-category {
+    max-width: 1259px;
+  }
+}
+
+// desktopL****************************************************************************************
+@media (min-width: 1260px) {
+  .menu-category {
+    max-width: 1600px;
+  }
+}
+
+//tablet+laptop+desktop**********************************************************************
+@media (min-width: 768px) {
+
+  .menu-category {
+    padding-bottom: 0;
+    //ставлю позиционирование, чтобы относительно этого блока выравнивались контейнеры с обложками с абсолютныи позиционированием
+    position: relative;
+
+    &::after {
+      content: " ";
+      display: block;
+      position: relative;
+      float: right;
+      width: 350px;
+      height: 220px;
+      margin-top: -254px;
+      background: url(../img/menu_complete_overlay_effect.png) right bottom no-repeat;
+    }
+
+    .col-50-right {
+      @include clearfix;
+    }
+  }
+
+  .menu-category_container {
+    @include clearfix;
+  }
+
+  .breakfast {
+    box-sizing: border-box;
+  }
+
+  .breakfast-sub-hd {
+    line-height: 26px;
+    margin-bottom: 59px;
+  }
+
+  .breakfast_item {
+    margin-bottom: 37px;
+
+    h4 {
+      letter-spacing: 1.5px;
+    }
+    p {
+      line-height: 35px;
+    }
+    span {
+      line-height: 61px;
+    }
+  }
+
+  .breakfast-covers_container {
+    height: 690px;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: none;
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeL {
+    top: 89px;
+    right: 10.6%;
+    animation: rotate 3s;
+    animation-delay: 0.5s;
+
+    .breakfast-cover {
+      padding-bottom: 0;
+
+      &::before {
+        border-width: 30px 0 0 28px;
+      }
+
+      .cover-hd {
+        //padding-top: 49px;
+
+        span {
+          font-size: 14px;
+        }
+
+        .cover_decor {
+          height: 86px;
+        }
+      }
+
+      h3 {
+        margin: 51px 13px 25px;
+      }
+      p {
+        line-height: 31px;
+      }
+      a {
+        margin: 44px auto 65px;
+        padding: 15px 0;
+        font-size: 18px;
+        &:hover {
+          border: 1px dashed $grey;
+          background-color: $bthReadHover;
+          color: $h3SepiaDark;
+        }
+      }
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeM {
+    //position: absolute;
+    //float: right;
+    top: 115px;
+    right: 9.8%;
+    //z-index: 2;
+
+    .breakfast-cover {
+      position: relative;
+      padding-bottom: 0;
+
+      .cover-hd {
+        padding-top: 44px;
+
+        span {
+          font-size: 12px;
+        }
+
+        .cover_decor {
+          height: 79px;
+        }
+      }
+
+      h3 {
+        margin: 43px 13px 23px;
+      }
+      p {
+        line-height: 28px;
+      }
+      a {
+        margin: 41px auto 65px;
+        padding: 15px 0 14px;
+        font-size: 15px;
+        letter-spacing: 2px;
+        &:hover {
+          border: 1px dashed $grey;
+          background-color: $bthReadHover;
+          color: $h3SepiaDark;
+        }
+      }
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeS {
+    position: absolute;
+    float: right;
+    top: 139px;
+    right: 9%;
+
+    .breakfast-cover {
+      position: relative;
+      padding-bottom: 0;
+
+      .cover-hd {
+        padding-top: 40px;
+
+        span {
+          font-size: 12px;
+        }
+
+        .cover_decor {
+          height: 66px;
+        }
+      }
+
+      h3 {
+        margin: 46px 13px 23px;
+      }
+      p {
+        line-height: 25px;
+      }
+      a {
+        margin: 38px auto 65px;
+        padding: 13px 0 14px;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        &:hover {
+          border: 1px dashed $grey;
+          background-color: $bthReadHover;
+          color: $h3SepiaDark;
+        }
+      }
+    }
+  }
+}
+
+//laptop+desktop*****************************************************************************
+@media (min-width:1024px) {
+  .breakfast {
+    padding: 85px 0 41px 14%;
+  }
+
+  .breakfast_title {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+
+  .breakfast-sub-hd {
+    font-size: 18px;
+  }
+
+  .breakfast_item {
+    h4 {
+      font-size: 30px;
+    }
+    span {
+      font-size: 36px;
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeL {
+    width: 440px;
+    max-width: 440px;
+    height: 600px;
+
+    .breakfast-cover {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 95%);
+      height: 600px;
+
+      &::before {
+        top: 571px;
+        box-shadow: -13px 19px 19px 3px rgba(0, 0, 0, 0.87);
+      }
+
+      .cover-hd {
+        span {
+          margin: 0 84px;
+        }
+
+        .cover_decor {
+          width: 100%;
+          background-size: auto;
+        }
+      }
+
+      h3 {
+        font-size: 44px;
+        line-height: 60px;
+      }
+      p {
+        margin: 0 51px;
+      }
+      a {
+        width: 188px;
+      }
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeM {
+    width: 402px;
+    max-width: 402px;
+    height: 548px;
+
+    .breakfast-cover {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 95%);
+      height: 548px;
+
+      &::before {
+        top: 520px;
+        border-width: 30px 0 0 25px;
+        box-shadow: -13px 19px 19px 3px rgba(0, 0, 0, 0.87);
+      }
+
+      .cover-hd {
+        span {
+          margin: 0 77px;
+        }
+
+        .cover_decor {
+          width: 100%;
+          background-size: auto;
+        }
+      }
+
+      h3 {
+        font-size: 40px;
+        line-height: 56px;
+      }
+      p {
+        margin: 0 48px;
+        font-size: 13px;
+      }
+      a {
+        width: 172px;
+      }
+    }
+  }
+
+  .breakfast-cover_box.cover-sizeS {
+    width: 367px;
+    max-width: 367px;
+    height: 501px;
+
+    .breakfast-cover {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 96%);
+      height: 501px;
+
+      &::before {
+        top: 480px;
+        border-width: 31px 0 0 29px;
+        box-shadow: -13px 19px 19px 3px rgba(0, 0, 0, 0.87);
+      }
+
+      .cover-hd {
+        span {
+          margin: 0 69px;
+        }
+
+        .cover_decor {
+          width: 100%;
+          background-size: auto;
+        }
+      }
+
+      h3 {
+        font-size: 37px;
+        line-height: 50px;
+      }
+      p {
+        margin: 0 48px;
+        font-size: 11px;
+      }
+      a {
+        width: 158px;
+      }
+    }
+  }
+}
