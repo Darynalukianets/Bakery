@@ -108,7 +108,6 @@ var dishes = [
                 function draw(timePassed, step) {
                     widgetCover.style.opacity = timePassed / step;
                     widgetContentBox.style.opacity = timePassed / step;
-                    console.log(widgetCover.style);
                 }
             }
             if (clickedElemId === arr[i].id) {
@@ -121,7 +120,7 @@ var dishes = [
                 widgetContentBox.style.opacity = 0;
                 widgetContentBox.style.opacity = 0;
 
-                widgetCover.style.backgroundImage = "url(../img/" + arr[i].img + ")";
+                widgetCover.style.backgroundImage = "url(img/" + arr[i].img + ")";
                 widgetTitle.innerHTML = arr[i].title;
                 widgetSubTitle.innerHTML = arr[i].subtitle;
                 widgetText.innerHTML = arr[i].descr;

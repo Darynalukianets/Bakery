@@ -177,21 +177,16 @@
     left: 32px;
   }
 
-  .menu-preview_widget {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 8.5% 100%, 0 89%);
-  }
-
   .widget_cover {
-    width: 282px;
+    width: 280px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%, 0 89%);
   }
 
   .widget_content {
     width: 332px;
     height: 642px;
-    background: url(../img/menu_preview_watermark.png) 69px 340px no-repeat;
+    background: url(../img/menu_preview_watermark.png) 72px 288px no-repeat;
   }
 
   .widget-hd {
@@ -217,6 +212,7 @@
   .widget_slider {
     width: 305px;
     left: 16px;
+    top: 205px;
   }
 }
 
@@ -234,19 +230,14 @@
     left: 62px;
   }
 
-  .menu-preview_widget {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 7% 100%, 0 89%);
-  }
-
   .widget_cover {
-    width: 335px;
+    width: 325px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%, 0 89%);
   }
 
   .widget_content {
-    width: 484px;
+    width: 478px;
     background: url(../img/menu_preview_watermark.png) 217px 287px no-repeat;
   }
 
@@ -285,15 +276,10 @@
     left: 95px;
   }
 
-  .menu-preview_widget {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 5.5% 100%, 0 89%);
-  }
-
   .widget_cover {
     width: 419px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%, 0 89%);
   }
 
   .widget_content {
@@ -347,18 +333,18 @@
     top: 140px;
     margin: 0;
     @include clearfix;
-    border-bottom-left-radius: 96px;
+    border-bottom-left-radius: 97px;
   }
 
   .menu-preview_widget {
     position: relative;
     height: 512px;
-    background-color: $white;
   }
 
   .widget_cover {
     display: inline-block;
     height: 512px;
+    vertical-align: top;
 
     &::before {
       content:"";
@@ -378,9 +364,10 @@
     display: inline-block;
     position: relative;
     left: -4px;
-    top: -230px;
+    top: -72px;
     background-size: auto;
     text-align: inherit;
+    vertical-align: top;
   }
 
   .widget-hd {
@@ -410,7 +397,6 @@
 
   .widget_slider {
     position: relative;
-    top: 220px;
     margin: 0;
   }
 
@@ -452,6 +438,7 @@
 
   .widget_slider {
     width: 429px;
+    top: 177px;
   }
 
   .slider_hider {
